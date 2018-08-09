@@ -1,0 +1,1443 @@
+{
+  "clientRequestId" : "20171109003616036_4884",
+  "environment" : {
+    "dataset" : "bigquery.googleapis.com/cloud_dataflow",
+    "experiments" : [ "enable_custom_bigquery_source", "enable_custom_bigquery_sink" ],
+    "sdkPipelineOptions" : {
+      "options" : {
+        "dataflowEndpoint" : "",
+        "experiments" : [ "enable_custom_bigquery_source", "enable_custom_bigquery_sink" ],
+        "project" : "dataflow-templates",
+        "overrideWindmillBinary" : null,
+        "output" : null,
+        "inputFile" : null,
+        "streaming" : false,
+        "enableCloudDebugger" : false,
+        "runner" : "com.google.cloud.dataflow.sdk.runners.TemplatingDataflowPipelineRunner",
+        "credentialFactoryClass" : "com.google.cloud.dataflow.sdk.util.GcpCredentialFactory",
+        "googleApiTrace" : null,
+        "jobName" : "wordcounttemplate-zhouyunqing-1109003610",
+        "appName" : "WordCountTemplate",
+        "optionsId" : 0,
+        "apiRootUrl" : "https://dataflow.googleapis.com/",
+        "stagingLocation" : "gs://dataflow-templates/wordcount/staging",
+        "stagerClass" : "com.google.cloud.dataflow.sdk.util.GcsStager",
+        "tempLocation" : "gs://dataflow-templates/wordcount/staging",
+        "stableUniqueNames" : "WARNING",
+        "saveProfilesToGcs" : null,
+        "numberOfWorkerHarnessThreads" : 0,
+        "gcsUploadBufferSizeBytes" : null,
+        "enableProfilingAgent" : false,
+        "dataflowJobFile" : "gs://dataflow-templates/wordcount/template_file_1_9_1",
+        "pathValidatorClass" : "com.google.cloud.dataflow.sdk.util.DataflowPathValidator"
+      },
+      "display_data" : [ {
+        "namespace" : "com.google.cloud.dataflow.sdk.options.DataflowPipelineOptions",
+        "key" : "project",
+        "type" : "STRING",
+        "value" : "dataflow-templates"
+      }, {
+        "namespace" : "com.google.cloud.dataflow.sdk.options.PipelineOptions",
+        "key" : "tempLocation",
+        "type" : "STRING",
+        "value" : "gs://dataflow-templates/wordcount/staging"
+      }, {
+        "namespace" : "com.google.cloud.dataflow.sdk.options.ApplicationNameOptions",
+        "key" : "appName",
+        "type" : "STRING",
+        "value" : "WordCountTemplate"
+      }, {
+        "namespace" : "com.google.cloud.dataflow.sdk.options.PipelineOptions",
+        "key" : "runner",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.runners.TemplatingDataflowPipelineRunner",
+        "shortValue" : "TemplatingDataflowPipelineRunner"
+      }, {
+        "namespace" : "com.google.cloud.dataflow.sdk.options.DataflowPipelineOptions",
+        "key" : "jobName",
+        "type" : "STRING",
+        "value" : "wordcounttemplate-zhouyunqing-1109003610"
+      }, {
+        "namespace" : "com.google.cloud.dataflow.sdk.options.DataflowPipelineOptions",
+        "key" : "stagingLocation",
+        "type" : "STRING",
+        "value" : "gs://dataflow-templates/wordcount/staging"
+      } ]
+    },
+    "tempStoragePrefix" : "storage.googleapis.com/dataflow-templates/wordcount/staging",
+    "userAgent" : {
+      "name" : "Google Cloud Dataflow SDK for Java",
+      "version" : "1.9.1",
+      "build.date" : "2017-08-19 01:20"
+    },
+    "version" : {
+      "job_type" : "JAVA_BATCH_AUTOSCALING",
+      "major" : "6"
+    },
+    "workerPools" : [ {
+      "autoscalingSettings" : {
+        "maxNumWorkers" : 0
+      },
+      "numWorkers" : 0,
+      "packages" : [ {
+        "location" : "gs://dataflow-templates/wordcount/staging/classes-_RhoerzExr1AK-w_IE2CnQ.jar",
+        "name" : "classes-_RhoerzExr1AK-w_IE2CnQ.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-cloud-dataflow-java-sdk-all-1.9.1-SxY0zGRKwhoMC8EvVk2-CA.jar",
+        "name" : "google-cloud-dataflow-java-sdk-all-1.9.1-SxY0zGRKwhoMC8EvVk2-CA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-api-services-dataflow-v1b3-rev43-1.22.0-wdoyjsTHUvrpH2Ab-2RD8Q.jar",
+        "name" : "google-api-services-dataflow-v1b3-rev43-1.22.0-wdoyjsTHUvrpH2Ab-2RD8Q.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/grpc-all-0.13.1-bx2eC5N9lQfGM29VaZSk5g.jar",
+        "name" : "grpc-all-0.13.1-bx2eC5N9lQfGM29VaZSk5g.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/grpc-auth-0.13.1-iwnyHz9DVM25KOKijImfHw.jar",
+        "name" : "grpc-auth-0.13.1-iwnyHz9DVM25KOKijImfHw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/grpc-netty-0.13.1-xr8bE6pyKXMEnRDmD8d4Ug.jar",
+        "name" : "grpc-netty-0.13.1-xr8bE6pyKXMEnRDmD8d4Ug.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/netty-codec-http2-4.1.0.CR1-Uj6v7WUVo8kEVAcqTd3FiA.jar",
+        "name" : "netty-codec-http2-4.1.0.CR1-Uj6v7WUVo8kEVAcqTd3FiA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/netty-codec-http-4.1.0.CR1-e6jle34EWTBx8rfuwHGobg.jar",
+        "name" : "netty-codec-http-4.1.0.CR1-e6jle34EWTBx8rfuwHGobg.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/grpc-protobuf-0.13.1-XWbwzDZytbvzxyzAw2Tjgw.jar",
+        "name" : "grpc-protobuf-0.13.1-XWbwzDZytbvzxyzAw2Tjgw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/grpc-core-0.13.1-iQqOCqJZMu-uPHt8JJjGRA.jar",
+        "name" : "grpc-core-0.13.1-iQqOCqJZMu-uPHt8JJjGRA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/grpc-okhttp-0.13.1-U41IsoE2oJqVr2iKYtGyUg.jar",
+        "name" : "grpc-okhttp-0.13.1-U41IsoE2oJqVr2iKYtGyUg.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/okio-1.6.0-Fk0cKMMjz24qkX1gN0xXGA.jar",
+        "name" : "okio-1.6.0-Fk0cKMMjz24qkX1gN0xXGA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/okhttp-2.5.0-64v0X4G_nxfR_PsuymOqpg.jar",
+        "name" : "okhttp-2.5.0-64v0X4G_nxfR_PsuymOqpg.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/grpc-protobuf-nano-0.13.1-BukNVfl769wQOwvRwp_XZw.jar",
+        "name" : "grpc-protobuf-nano-0.13.1-BukNVfl769wQOwvRwp_XZw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/protobuf-javanano-3.0.0-alpha-5-SsS7fZe7brffHbAGUgRrnw.jar",
+        "name" : "protobuf-javanano-3.0.0-alpha-5-SsS7fZe7brffHbAGUgRrnw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/grpc-stub-0.13.1-3kykzH2He9daV8xi4FO-BQ.jar",
+        "name" : "grpc-stub-0.13.1-3kykzH2He9daV8xi4FO-BQ.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/netty-handler-4.1.0.CR1-4CuhRXlkzse5yR3uZ6RpmQ.jar",
+        "name" : "netty-handler-4.1.0.CR1-4CuhRXlkzse5yR3uZ6RpmQ.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/netty-buffer-4.1.0.CR1-0x9LW2f_jQEVZsa_XEPyKg.jar",
+        "name" : "netty-buffer-4.1.0.CR1-0x9LW2f_jQEVZsa_XEPyKg.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/netty-common-4.1.0.CR1-IAol3AxyB-j6PYtEc5hcuw.jar",
+        "name" : "netty-common-4.1.0.CR1-IAol3AxyB-j6PYtEc5hcuw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/netty-transport-4.1.0.CR1-frvkKd9t44wUuN4CO2NSEA.jar",
+        "name" : "netty-transport-4.1.0.CR1-frvkKd9t44wUuN4CO2NSEA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/netty-resolver-4.1.0.CR1-LpZP-DTREErY3qVc8ZkxDw.jar",
+        "name" : "netty-resolver-4.1.0.CR1-LpZP-DTREErY3qVc8ZkxDw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/netty-codec-4.1.0.CR1--74YzPdGUqIucxceVUSLbA.jar",
+        "name" : "netty-codec-4.1.0.CR1--74YzPdGUqIucxceVUSLbA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/grpc-pubsub-v1-0.0.2-dBZtsvjjJGVPsdGGeAN8PQ.jar",
+        "name" : "grpc-pubsub-v1-0.0.2-dBZtsvjjJGVPsdGGeAN8PQ.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/grpc-core-proto-0.0.3-Ekw5Sf3j7cXbMJh4AbXSFQ.jar",
+        "name" : "grpc-core-proto-0.0.3-Ekw5Sf3j7cXbMJh4AbXSFQ.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-auth-library-oauth2-http-0.4.0-jGsp0EoUMafmm6yjnBlCzw.jar",
+        "name" : "google-auth-library-oauth2-http-0.4.0-jGsp0EoUMafmm6yjnBlCzw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-auth-library-credentials-0.4.0-sOCkMKAa-I3FobkqtxTZnA.jar",
+        "name" : "google-auth-library-credentials-0.4.0-sOCkMKAa-I3FobkqtxTZnA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/bigtable-protos-0.3.0-dhNwqtpuy0DKFTWElkvxsQ.jar",
+        "name" : "bigtable-protos-0.3.0-dhNwqtpuy0DKFTWElkvxsQ.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-api-client-java6-1.22.0-pAA5EAZJeIFy7tsJx02mNg.jar",
+        "name" : "google-api-client-java6-1.22.0-pAA5EAZJeIFy7tsJx02mNg.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-api-client-jackson2-1.22.0-khNOOpqWhOodQ9XFsrVMZw.jar",
+        "name" : "google-api-client-jackson2-1.22.0-khNOOpqWhOodQ9XFsrVMZw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-api-services-clouddebugger-v2-rev8-1.22.0-kDDBxsB9PBVcQTz5cCEKsA.jar",
+        "name" : "google-api-services-clouddebugger-v2-rev8-1.22.0-kDDBxsB9PBVcQTz5cCEKsA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-api-services-storage-v1-rev71-1.22.0-QsncKK1oljt-TCckBvbtvQ.jar",
+        "name" : "google-api-services-storage-v1-rev71-1.22.0-QsncKK1oljt-TCckBvbtvQ.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-http-client-jackson-1.22.0-F07IYuTMywRx7KNEfAIBPw.jar",
+        "name" : "google-http-client-jackson-1.22.0-F07IYuTMywRx7KNEfAIBPw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-http-client-jackson2-1.22.0-Ammeprgl5wrrKOHkvhN7hg.jar",
+        "name" : "google-http-client-jackson2-1.22.0-Ammeprgl5wrrKOHkvhN7hg.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-http-client-protobuf-1.22.0-OIczm5RJILX0AGGEBF0l_Q.jar",
+        "name" : "google-http-client-protobuf-1.22.0-OIczm5RJILX0AGGEBF0l_Q.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-oauth-client-java6-1.22.0-It8VeOwmI6k42XFRdvaEwQ.jar",
+        "name" : "google-oauth-client-java6-1.22.0-It8VeOwmI6k42XFRdvaEwQ.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-oauth-client-1.22.0-_akmWpZiQ_imptqc8uVj1g.jar",
+        "name" : "google-oauth-client-1.22.0-_akmWpZiQ_imptqc8uVj1g.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-api-services-datastore-protobuf-v1beta2-rev1-4.0.0-qcdHBXvShPma-C6x0fzyHg.jar",
+        "name" : "google-api-services-datastore-protobuf-v1beta2-rev1-4.0.0-qcdHBXvShPma-C6x0fzyHg.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/gcsio-1.4.5-wDxmp2xB1MC0SyUVljocbw.jar",
+        "name" : "gcsio-1.4.5-wDxmp2xB1MC0SyUVljocbw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/datastore-v1-proto-client-1.1.0-bh6DGfcKGMeqiAdiBRZJIA.jar",
+        "name" : "datastore-v1-proto-client-1.1.0-bh6DGfcKGMeqiAdiBRZJIA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/datastore-v1-protos-1.0.1-umjF_6CaHHkb2Gvs0nZmBQ.jar",
+        "name" : "datastore-v1-protos-1.0.1-umjF_6CaHHkb2Gvs0nZmBQ.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/util-1.4.5-kK-TA3SeeyuNcdfvxAqaEw.jar",
+        "name" : "util-1.4.5-kK-TA3SeeyuNcdfvxAqaEw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/protobuf-java-3.0.0-beta-1-uq4uMs10rxd3LA8GI6lRKg.jar",
+        "name" : "protobuf-java-3.0.0-beta-1-uq4uMs10rxd3LA8GI6lRKg.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/jsr305-3.0.1-xlMr6z98xUqNc9JdVgK55A.jar",
+        "name" : "jsr305-3.0.1-xlMr6z98xUqNc9JdVgK55A.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/jackson-core-2.7.0-KSWjvxWpyVZtBqefjQeZwA.jar",
+        "name" : "jackson-core-2.7.0-KSWjvxWpyVZtBqefjQeZwA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/jackson-annotations-2.7.0-LpydyH_6Xv0kwlulD_Rnzg.jar",
+        "name" : "jackson-annotations-2.7.0-LpydyH_6Xv0kwlulD_Rnzg.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/jackson-databind-2.7.0-_4r-FNFzgfL0Zwtvl3LWcA.jar",
+        "name" : "jackson-databind-2.7.0-_4r-FNFzgfL0Zwtvl3LWcA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/avro-1.7.7-6RDjo7rQGBseLlWFbPPOgw.jar",
+        "name" : "avro-1.7.7-6RDjo7rQGBseLlWFbPPOgw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/jackson-core-asl-1.9.13-MZxJpDBOP6n-PNjc_ACdNw.jar",
+        "name" : "jackson-core-asl-1.9.13-MZxJpDBOP6n-PNjc_ACdNw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/jackson-mapper-asl-1.9.13-F1D5wzk1L8S3KNYbVxcWEw.jar",
+        "name" : "jackson-mapper-asl-1.9.13-F1D5wzk1L8S3KNYbVxcWEw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/paranamer-2.3-4wYL6_5Emr6yd-d8TDOIyw.jar",
+        "name" : "paranamer-2.3-4wYL6_5Emr6yd-d8TDOIyw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/snappy-java-1.1.2.1-EijvhqpKlDIeuPI1_wi4yA.jar",
+        "name" : "snappy-java-1.1.2.1-EijvhqpKlDIeuPI1_wi4yA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/commons-compress-1.9-bJzoU0ueTBfl3qepdCUkXA.jar",
+        "name" : "commons-compress-1.9-bJzoU0ueTBfl3qepdCUkXA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-cloud-dataflow-java-examples-all-1.9.1-MC8PlQs3-vsTEO2M3gvzDA.jar",
+        "name" : "google-cloud-dataflow-java-examples-all-1.9.1-MC8PlQs3-vsTEO2M3gvzDA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-api-client-1.22.0-8wk3fkgHA12sH-EviWBxWA.jar",
+        "name" : "google-api-client-1.22.0-8wk3fkgHA12sH-EviWBxWA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-api-services-bigquery-v2-rev295-1.22.0-N4nSYU_qj4pCLvhXYtYJjw.jar",
+        "name" : "google-api-services-bigquery-v2-rev295-1.22.0-N4nSYU_qj4pCLvhXYtYJjw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-http-client-1.22.0-q8VPJBnjIy5tDHYvqlr2Jw.jar",
+        "name" : "google-http-client-1.22.0-q8VPJBnjIy5tDHYvqlr2Jw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/httpclient-4.0.1-nKmHdIYBAcBsqQEO_WIkoQ.jar",
+        "name" : "httpclient-4.0.1-nKmHdIYBAcBsqQEO_WIkoQ.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/httpcore-4.0.1-bBlj_YrAxAwATJ6JLg13Aw.jar",
+        "name" : "httpcore-4.0.1-bBlj_YrAxAwATJ6JLg13Aw.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/commons-logging-1.1.1-7USDR_wBBANKoUyBib833g.jar",
+        "name" : "commons-logging-1.1.1-7USDR_wBBANKoUyBib833g.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/commons-codec-1.3-jhScEFN0HANzalLfg5dNzA.jar",
+        "name" : "commons-codec-1.3-jhScEFN0HANzalLfg5dNzA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/google-api-services-pubsub-v1-rev10-1.22.0-ZMoj70u__EXLCEN85nJG5w.jar",
+        "name" : "google-api-services-pubsub-v1-rev10-1.22.0-ZMoj70u__EXLCEN85nJG5w.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/joda-time-2.4-EjHD4J3mql1rbZmCwCJOIA.jar",
+        "name" : "joda-time-2.4-EjHD4J3mql1rbZmCwCJOIA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/guava-18.0-lHZB9rtTWx2ULRvDh8RSkA.jar",
+        "name" : "guava-18.0-lHZB9rtTWx2ULRvDh8RSkA.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/javax.servlet-api-3.1.0-ed5p6fXtjH_Lg0JYVzK79w.jar",
+        "name" : "javax.servlet-api-3.1.0-ed5p6fXtjH_Lg0JYVzK79w.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/slf4j-api-1.7.7-ykKAv5PWQ2dyOuXI1C3QuQ.jar",
+        "name" : "slf4j-api-1.7.7-ykKAv5PWQ2dyOuXI1C3QuQ.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/slf4j-jdk14-1.7.7-_n2gFcnUkdLjPGo6wsAIQQ.jar",
+        "name" : "slf4j-jdk14-1.7.7-_n2gFcnUkdLjPGo6wsAIQQ.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/hamcrest-all-1.3-rlECKGtXIN0obWtgbLiR4g.jar",
+        "name" : "hamcrest-all-1.3-rlECKGtXIN0obWtgbLiR4g.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/junit-4.11-PEK-XqfL82NXFqu7Qpy5DQ.jar",
+        "name" : "junit-4.11-PEK-XqfL82NXFqu7Qpy5DQ.jar"
+      }, {
+        "location" : "gs://dataflow-templates/wordcount/staging/hamcrest-core-1.3-Y5M2O0fdy7qCMhEQw-B1GQ.jar",
+        "name" : "hamcrest-core-1.3-Y5M2O0fdy7qCMhEQw-B1GQ.jar"
+      } ],
+      "workerHarnessContainerImage" : "dataflow.gcr.io/v1beta3/java-batch:1.9.1"
+    } ]
+  },
+  "name" : "wordcounttemplate-zhouyunqing-1109003610",
+  "steps" : [ {
+    "kind" : "ParallelRead",
+    "name" : "s1",
+    "properties" : {
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "ReadLines/Read"
+      },
+      "display_data" : [ {
+        "namespace" : "com.google.cloud.dataflow.sdk.io.CompressedSource",
+        "key" : "compressionMode",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.io.CompressedSource$DecompressAccordingToFilename",
+        "shortValue" : "DecompressAccordingToFilename",
+        "label" : "Compression Mode"
+      }, {
+        "namespace" : "com.google.cloud.dataflow.sdk.io.CompressedSource",
+        "key" : "source",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSource",
+        "shortValue" : "TextSource",
+        "label" : "Read Source"
+      }, {
+        "namespace" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSource",
+        "key" : "filePattern",
+        "type" : "STRING",
+        "value" : "RuntimeValueProvider{propertyName=inputFile, default=null, value=null}",
+        "label" : "File Pattern"
+      }, {
+        "namespace" : "com.google.cloud.dataflow.sdk.io.Read$Bounded",
+        "key" : "source",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.io.CompressedSource",
+        "shortValue" : "CompressedSource",
+        "label" : "Read Source"
+      } ],
+      "format" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "custom_source"
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "ReadLines/Read.out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$ValueOnlyWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.coders.StringUtf8Coder"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ],
+      "custom_source_step_input" : {
+        "metadata" : {
+          "produces_sorted_keys" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : false
+          }
+        },
+        "spec" : {
+          "@type" : "com.google.cloud.dataflow.sdk.runners.dataflow.CustomSources",
+          "serialized_source" : {
+            "@type" : "http://schema.org/Text",
+            "value" : "glNOQVBQWQAAAAABAAAAAQAAA8XmDfBcrO0ABXNyADFjb20uZ29vZ2xlLmNsb3VkLmRhdGFmbG93LnNkay5pby5Db21wcmVzc2VkU291cmNlD1A7qlbdJiQCAAJMAA5jaGFubmVsRmFjdG9yeXQAT0xjb20vCVEALwVRAC8RURwvc2RrL2lvLz5RABAkRGVjbwlkEGluZ0NoLlEAFDtMAA5zbwF3LERlbGVnYXRldAAyTIJjABhGaWxlQmFzEbMQO3hyADCC6QA6NQAcuc5/WYSxZm0F6FARZmlsZU9yUGF0dGVyblNwZWN0ADV6iAB8b3B0aW9ucy9WYWx1ZVByb3ZpZGVyO0wABG1vZGV0ADd6PwAEaW8+xwAMJE1vZAXMADKCzAAUT2Zmc2V0PQNARHtGQEUf2PkCAANKAAllbmQJIlxKAA1taW5CdW5kbGVTaXplSgALc3RhcnQJHgx4cgAugmsAEEJvdW5kMWo4eMEAdrFze/sCAAB4cgAngj0ASVMcR8gu5UkevyMBNghwf/8JAREIAAANAQxzcgBIdlAALXEALjJxARwkUnVudGltZTIVAFAIIrSGIpFDUAIABUwADGRlZmF1bHQFInx0ABJMamF2YS9sYW5nL09iamVjdDtMAAVrbGFzc3QAER0dAEMBEzA7TAAKbWV0aG9kTmFtOj4AJFN0cmluZztMAAkNmhBJZHQAEB1CBExvBR8gDHByb3BlcnR5AUMkcQB+AA14cHB2cm7vABhpbnRlZ3JhQWFILldvcmRDb3VudFRlbXBsYXRlJBUSAE9Jgy1CAQEweHB0AAxnZXRJbnB1dEHyDHNyAA4B8QAuAfEALgWSNIvkkMyPI98CAAFKAAV2Qb4MeHIAEBklNE51bWJlcoaslR0LlOCLJbUBWwEBDHQACWkRWgx+cgA1drEBBGlvPnUDACRB4wFJAQEAEkVFHZ4MRW51bQEZAQEBHUhwdAALRklMRVBBVFRFUk5zcgBPgnEAan4EKEFjY29yZGluZ1RvIRosbmFtZR6KCnJ1a+67BeUEc3KKegMYVGV4dElPJAEHSd1UcCoMS3ZJP6wCAAFMAAVjb2RlcnQALHr9AwUnCHMvQwEuGDt4cQB+AAM6EAMAASEFAQEBHQAPAQUQGXNyADR2AAEJVwQuU0WZDFV0ZjgFYRzAEpq34QKbLQHlBHIAeikFDUMUQXRvbWljBT8cvMyDc0lOGc4JPwA/koIASERldGVybWluaXN0aWNTdGFuZGFBxShkZXKgIDyAy62kbQlOeuoEDY0yQQAwtdlR3THX2hUCAAB4cA=="
+          }
+        }
+      }
+    }
+  }, {
+    "kind" : "ParallelDo",
+    "name" : "s2",
+    "properties" : {
+      "serialized_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "%82SNAPPY%00%00%00%00%01%00%00%00%01%00%00%07@%f7%1c%f0L%ac%ed%00%05sr%00+com.google.cloud.dataflow.sdk.util.DoFnInfo%c3|%e8%c2%d1&%cc%89%02%00%04L%00%04doFnt%00/Lcom/%09A%00/%05A%00/%11A</sdk/transforms/%01GD;L%00%0ainputCodert%00,Lv?%00%00c%01'%04s/%05. ;L%00%0esideI%01@%c8Viewst%00%14Ljava/lang/Iterable;L%00%11windowingStrategyt%006zk%00%14util/W>8%00%18;xpsr%00Ff&%01%90integration.WordCountTemplate$Extract%01%19tsFn%19P%7f%df2{%15n%02%00%01L%00%0aemptyLinest%005z%9d%00=G8Aggregator;xr%00-f%9a%00%0csdk.%198%00.!%7f89%cf%e4%fb!%1e5%f2%02%00%02Z%00%13a%15J,sAreFinalL%00%0b%1d%16%08t%00%0f)`%25%1c(Map;xp%00sr%00%11!uI%1c%f0@HashMap%05%07%da%c1%c3%16`%d1%03%00%02F%00%0aloadFactorI%00%09thresholdxp?@%00%00%00%00%00%0cw%08%00%00%00%10%00%00%00%01t%00=%07%0csr%00B%b2%cf%00%0c$Del!%0b%08ing9%16%1c8P%91%c11m%a7%ddE%a60%09combineFnt%00<%a6d%01%00C%096%00$%0d%08%00FA%b8%04%08d%09m4eq%00~%00%07L%00%02idt%00%10= 8UUID;L%00%04namet%00%12%09%1aE%9a%14StringIK%006%a2%e2%00lSum$SumLongFnu%d3%c7%ba%94%09'r%02%00%00xr%00D%a2E%00%0d%c2%18$Binary%0d%0e%09S%1c%0bnwBM%d3%1e?%09S%00:%c2S%00%0dM$Fn%ac;E%9a%f5%b5%9d%c6%09I%00N%beI%00$FnBase$Abse,%14Global%15]%1c%0a%caF%c0q%b8IM%01]%00pa%8c%00%0eY}!rx%bc%99%03%f7%98m%85/%02%00%02J%00%0cleastSigBitsJ%00%0bmo%15%0eDxp%a5tv%96%12%a2%11%ecTh%ad%adD%8dH%19!%c8%04%0dx%01%06%10%12sr%004v%b7%00%00c%85%89%00.)%ca%0cUtf8%85%93%1c%c0%12%9a%b7%e1%02%9b-%01%9d%08r%000%92C%00%14Atomic%05?%1c%bc%cc%83sIN%19%ce%09?%00?%92?%00HDeterministicStanda%81u(der%a0 <%80%cb%ad%a4m%09N%002%92N%002A%00%1c%b5%d9Q%dd1%d7%da%15%01A!j%00_vC%00(repackaged..)%00Hommon.collect.Immut%a1%96HList$SerializedForm%85%0dP%00%00%00%02%00%01[%00%08elementst%00%13[}<(Object;xpur%11%19%00.aU%00.%0d%19%1c%90%ceX%9f%10s)l%05%b5%01N%86%cc%01%81%ce%00.B%ea%05%b0%cd&%c7yV%d02%ba%02%00%0aZ%00%18allowedLatenessSpecifiedZ%00%0dmode%1d%100%15outputTimeFn%1d%18%1c%10trigger%15%13%08L%00%0f:V%00Lt%00%18Lorg/joda/time/Du%c9KT;L%00%0fclosingBehaviort%00K%a6%c1%04%f5%00%cd%d2%04$C6M%00%81%a8%01%c8%08t%00GzU%00!-%0dE%04in%f5O%1c$Accumul%c5%f8%08Mod%e1u%00%0c.%09%01%08t%00AzY%00%d9%9b%1d%ae%00O=L%0c;L%00%07-D%08t%006zN%00%05%a7%0cExecIn%00T)|%0c;L%00%08)%0b%10Fnt%00=zD%00R%92%00I(%04Fn%c1%fb%04%00%00A^%10%16org.!%b3%00.!%b3%00.1%b3%1c%00%00%02?zQ%ce%d6A%89%08r%00%1f6%25%00 base.Base%1d.HY%19:%f4%8e%02%00%01J%00%07iMillisxE%c1%01%01%0c~r%00I.U%03%00lB%9a%09%19%ad%00.%09%e2%0cing.%09%ad>%ed%01%01Q%01%01%00%12%c5<%a9@eC%08Enuu%85%01%1d`pt%00%11FIRE_IF_NON_EMPTY~r%00Ev%8b%00!|%0d{n#%02%01%83%01%01%01j%a1v80t%00%16DISCARDING_%01y(D_PANESsr%00]vs%00j%fe%00%08Fn$IFDAtEarliestAssigneda%a40stamp%bf%97%e5%aa%b5%f3%a2&%12%89%09%00%08)@%04Fn%01%95%10*xr%00H%ca|%00%09s%01aHFn$DefaultsB%5c%e7%dc%ccABDI%13%00?%faW%00%1c%89%f1s%acX%13%e1%1d%01N%a1%9f%00@%caP%00%e9]I' s%f3%88D%c5%25>%14%03%01Q%82%e5%01Rr%01(NonMergingW%129%0b$FnB%1cF9%bd%06%b8%1a%09T%00;%ca%a3%00%11J%1c%8eii%ba6:%25%cc%01J%01%efz%a1%07%00u%0e%aa%0cB%01%04%98f%a3%88%8d%b9%82V %02%00%04I%00%16firstIndexAfterSubtreeI%00%0c%8dg%05%1b%18L%00%0bsubT%89A%08st%00.%e3%09%0cList2%97%04%00<%ceS%04%0d%5c%89R%00%01a%13%0csr%00%13&%d7%08%10Array%01kDx%81%d2%1d%99%c7a%9d%03%00%01I%00%04size%89%22%04w%04%015%10xsr%00A%caa%01M%9e%0d%86%1c0%15Y%b6g%1f%8a%a0!g%00r%aa%06%0ai5%0cing.%0dI%18%87%8fm%a0%e2{%afiT.C%010q%00~%00?xppq%00~%00="
+      },
+      "non_parallel_inputs" : { },
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WordCountTemplate.CountWords/ParDo(ExtractWords)"
+      },
+      "user_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "com.google.cloud.dataflow.integration.WordCountTemplate$ExtractWordsFn"
+      },
+      "display_data" : [ {
+        "namespace" : "com.google.cloud.dataflow.sdk.transforms.ParDo$Bound",
+        "key" : "fn",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.integration.WordCountTemplate$ExtractWordsFn",
+        "shortValue" : "ExtractWordsFn",
+        "label" : "Transform Function"
+      } ],
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s1"
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WordCountTemplate.CountWords/ParDo(ExtractWords).out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.coders.StringUtf8Coder"
+          }, {
+            "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ]
+    }
+  }, {
+    "kind" : "ParallelDo",
+    "name" : "s3",
+    "properties" : {
+      "serialized_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "%82SNAPPY%00%00%00%00%01%00%00%00%01%00%00%06*%f5%18%f0L%ac%ed%00%05sr%00+com.google.cloud.dataflow.sdk.util.DoFnInfo%c3|%e8%c2%d1&%cc%89%02%00%04L%00%04doFnt%00/Lcom/%09A%00/%05A%00/%11A</sdk/transforms/%01GD;L%00%0ainputCodert%00,Lv?%00%00c%01'%04s/%05. ;L%00%0esideI%01@%c8Viewst%00%14Ljava/lang/Iterable;L%00%11windowingStrategyt%006zk%00%14util/W>8%00%18;xpsr%00;v&%01%19%e5%a8.Count$PerElement$1X%ff%f6%1f%85y%aa%ff%02%00%01L%00%06this$0t%00;Lv%f9%00%19S%00/>S%00%10;xr%00-%a2%91%00!v%909%cf%e4%fb!%1e5%f2%02%00%02Z%00%13aggregatorsAreFinalL%00%0ba%19%16%08t%00%0f)W%25%13(Map;xp%00sr%00%11!lI%13%c0HashMap%05%07%da%c1%c3%16`%d1%03%00%02F%00%0aloadFactorI%00%09thresholdxp?@%00%00%01%02%14w%08%00%00%00%10%01%0a%10xsr%009%a2%c3%00>%01%018%08t%22u%ad%ecM&%02%00%00xr%003%a2H%00%04PTQ%8d0#2%8d%0a&%06%e5%0f%03%00%00xp%01%8d%004vE%00I%87(.StringUtf8E%91%1c%c0%12%9a%b7%e1%02%9b-%09%88%000%92C%00%14Atomic%05?%1c%bc%cc%83sIN%19%ce%09?%00?%92?%00PDeterministicStandard%05N%1c%a0 <%80%cb%ad%a4m%09N%002%92N%002A%00%1c%b5%d9Q%dd1%d7%da%15%01AA%f4%00_vC%00(repackaged..)%00Hommon.collect.Immuta%94HList$SerializedFormA%08%01%01%18%02%00%01[%00%08ei/%10st%00%13[I}e%d4(Object;xpur%11%19%00.%01%19%00.%0d%19%1c%90%ceX%9f%10s)l%05%b5%01N%04sr~%cc%01A%d5%00.B%e8%03%b0%cd&%c7yV%d02%ba%02%00%0aZ%00%18allowedLatenessSpecifiedZ%00%0dmode%1d%100%15outputTimeFn%1d%18%1c%10trigger%15%13%08L%00%0f:V%00`t%00%18Lorg/joda/time/Duratio%a1&H%0fclosingBehaviort%00Kz%c0%04%9d2%95%fe%8d%d0%04$C6M%00%0c;L%00%04%01%c8%08t%00GzU%00!-%0dE%04in%b5M%1c$Accumul%05%ad%08Mod%a1s%00%0c.%09%01%08t%00AzY%00R%ae%00%00O=L%0c;L%00%07-D%08t%006zN%00%05%a7%0cExecIn%00T)|%0c;L%00%08)%0b%10Fnt%00=zD%00R%92%00I(%04Fn%a1%02%04%00%00A^%10%16org.!%b3%00.!%b3%00.1%b3%1c%00%00%02?zQ%ce%d6A%89%08r%00%1f6%25%00 base.Base%1d.HY%19:%f4%8e%02%00%01J%00%07iMillisxE%c1%01%01%0c~r%00I.U%03%00lB%98%07%19%ad%00.%09%e2%0cing.%09%ad>%ed%01%01Q%01%01%00%12%a5.%00%0e%a5%c4eC%08Enuu%85%01%1d`pt%00%11FIRE_IF_NON_EMPTY~r%00Ev%8b%00!|%0d{n#%02%01%83%01%01%01jHq%00~%00&t%00%16DISCARDING_%01y(D_PANESsr%00]vs%00j%fe%00%08Fn$IFDAtEarliestAssigneda%a40stamp%bf%97%e5%aa%b5%f3%a2&%e5%92%00%08)@%04Fn%01%95%10 xr%00H%ca|%00%09s%01aHFn$DefaultsB%5c%e7%dc%ccABDI%13%00?%faW%00%1c%89%f1s%acX%13%e1%1d%01N%a1%9f%00@%caP%00%14GlobalI' s%f3%88D%c5%25>%14%03%01Q%82%e5%01Rr%01(NonMergingW%127%09$FnB%1cF9%bd%06%b8%1a%09T%a66%09)%84%00iU%c4$Fn%8eii%ba6:%25%cc%01J%01%efz%a1%07%00u%0e%a8%0aB%01%04%98f%a3%88%8d%b9%82V %02%00%04I%00%16firstIndexAfterSubtreeI%00%0c%8dg%05%1b%18L%00%0bsubT%89A%0cst%00%10%c9%8d%01`%10/List2%97%04%00<%ceS%04%0d%5c%89R%00%01a%13%0csr%00%13e%97%01f%14.Array%01kDx%81%d2%1d%99%c7a%9d%03%00%01I%00%04size%89%22%04w%04%015%0e%b6%08%00A%ca%04%02M%9e%0d%86%1c0%15Y%b6g%1f%8a%a0!g%08r%00:%caP%00%0dI%18%87%8fm%a0%e2{%afiT.C%010q%00~%005xppq%00~%003"
+      },
+      "non_parallel_inputs" : { },
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WordCountTemplate.CountWords/Count.PerElement/Init"
+      },
+      "user_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "com.google.cloud.dataflow.sdk.transforms.Count$PerElement$1"
+      },
+      "display_data" : [ {
+        "namespace" : "com.google.cloud.dataflow.sdk.transforms.ParDo$Bound",
+        "key" : "fn",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.transforms.Count$PerElement$1",
+        "shortValue" : "",
+        "label" : "Transform Function"
+      } ],
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s2"
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WordCountTemplate.CountWords/Count.PerElement/Init.out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.coders.KvCoder",
+            "component_encodings" : [ {
+              "@type" : "com.google.cloud.dataflow.sdk.coders.StringUtf8Coder"
+            }, {
+              "@type" : "com.google.cloud.dataflow.sdk.coders.VoidCoder"
+            } ],
+            "is_pair_like" : {
+              "@type" : "http://schema.org/Boolean",
+              "value" : true
+            }
+          }, {
+            "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ]
+    }
+  }, {
+    "kind" : "GroupByKey",
+    "name" : "s4",
+    "properties" : {
+      "serialized_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "%82SNAPPY%00%00%00%00%01%00%00%00%01%00%00%03%bd%a2%0f%f0l%ac%ed%00%05sr%004com.google.cloud.dataflow.sdk.util.WindowingStrategy%cd&%c7yV%d02%ba%02%00%0aZ%00%18allowedLatenessSpecifiedZ%00%0dmodeSpec%0d%100%15outputTimeFn%1d(%1c%10trigger%15%13%0cL%00%0fa6V%00%d0t%00%18Lorg/joda/time/Duration;L%00%0fclosingBehaviort%00KLcom/%09%d8%00/%05%d8%00/%11%d8D/sdk/transforms/wi%0d%de%00/%09%e8%04$C6M%00,;L%00%04modet%00GLvU%00%0cutil%0dE%04in5-%1c$Accumul%05%ad%1cMode;L%00%0c.%09%01%08t%00AzY%00R%ae%00%04Ou9L%0c;L%00%07-D%08t%006zN%00%05%a7(ExecutableT)|%0c;L%00%08)%0b%10Fnt%00=zD%00R%92%00)@@Fn;xp%00%00%00%00sr%00%16org.!%b3%00.!%b3%00.1%b38%00%00%02?zQ%ce%d6%02%00%00xr%00%1f6%25%00 base.Base%1d.DY%19:%f4%8e%02%00%01J%00%07iMillis%09c%01%01%0c~r%00Iv%c5%02%19%ad%00.%09%e2%0cing.%09%ad>%ed%01%01Q%01%01%00%12%05%9a8%0ejava.lang.Enum%01%19%01%01%01%1d`pt%00%11FIRE_IF_NON_EMPTY~r%00Ev%8b%00!|%0d{n#%02%01f%01%01%01jHq%00~%00%0ct%00%16DISCARDING_%01y(D_PANESsr%00]vs%00j%fe%00%08Fn$IFDAtEarliestAssigneda%a4<stamp%bf%97%e5%aa%b5%f3%a2&%02%00%01]%22%01%95%10%06xr%00H%ca|%00%09s%01aHFn$DefaultsB%5c%e7%dc%ccABDI%13%00?%faW%00%1c%89%f1s%acX%13%e1%1d%01N%10psr%00@%caP%00%14GlobalI' s%f3%88D%c5%25>%14%03%01Q%82%e5%01Rr%01(NonMergingW%85q$FnB%1cF9%bd%06%b8%1a%09T%00;%ca%a3%00%11J%1c%8eii%ba6:%25%cc%01J%01%ef%8e%d5%05B%01%04%98f%a3%88%8d%b9%82V %02%00%04I%00%16firstIndexAfterSubtreeI%00%0c%8dg%05%1b%18L%00%0bsubT%89A%10st%00%10La1%89a%0cList2%97%04%00<%ceS%04%0d%5c%89R%00%01a%13%0csr%00%13%01fiK%10Array%01kDx%81%d2%1d%99%c7a%9d%03%00%01I%00%04size%89%22%04w%04%015%10xsr%00A%caa%01M%9e%0d%86%1c0%15Y%b6g%1f%8a%a0!g%08r%00:%caP%00%0dI%1c%87%8fm%a0%e2{%af&eT.C%010q%00~%00%1bxppq%00~%00%19"
+      },
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WordCountTemplate.CountWords/Count.PerElement/Count.PerKey/GroupByKey"
+      },
+      "display_data" : [ ],
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s3"
+      },
+      "disallow_combiner_lifting" : {
+        "@type" : "http://schema.org/Boolean",
+        "value" : false
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WordCountTemplate.CountWords/Count.PerElement/Count.PerKey/GroupByKey.out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.coders.KvCoder",
+            "component_encodings" : [ {
+              "@type" : "com.google.cloud.dataflow.sdk.coders.StringUtf8Coder"
+            }, {
+              "@type" : "com.google.cloud.dataflow.sdk.coders.IterableCoder",
+              "component_encodings" : [ {
+                "@type" : "com.google.cloud.dataflow.sdk.coders.VoidCoder"
+              } ],
+              "is_stream_like" : {
+                "@type" : "http://schema.org/Boolean",
+                "value" : true
+              }
+            } ],
+            "is_pair_like" : {
+              "@type" : "http://schema.org/Boolean",
+              "value" : true
+            }
+          }, {
+            "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ],
+      "is_merging_window_fn" : {
+        "@type" : "http://schema.org/Boolean",
+        "value" : false
+      }
+    }
+  }, {
+    "kind" : "CombineValues",
+    "name" : "s5",
+    "properties" : {
+      "serialized_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "%82SNAPPY%00%00%00%00%01%00%00%00%01%00%00%06%94%cc%1c%f0`%ac%ed%00%05sr%003com.google.cloud.dataflow.sdk.util.AppliedCombineFn%c7%a1%cb%fc%09%b3%b5T%02%00%05L%00%10accumulatorCodert%00,Lcom/%09U%00/%05U%00/%11U%14/sdk/c%01'%08s/C%01%07$;L%00%02fnt%00HLv4%00 transform%018%00m%09%88,Base$PerKeyC%11%14%14;L%00%07kv%05[%08t%00.zU%00%00c%01%82%08s/K%090%f0@;L%00%0esideInputViewst%00%14Ljava/lang/Iterable;L%00%11windowingStrategyt%006Lv%c2%00%14util/W>8%00%18;xpsr%001v%86%01%09%a8%1c.VarLong%05%dd8%0cG%ee%86%f5%99%01v%02%00%00xr%000%92@%00%14Atomic%05?%1c%bc%cc%83sIN%19%ce%09?%00?%92?%00PDeterministicStandard%05N%1c%a0 <%80%cb%ad%a4m%09N%002%92N%002A%00%1c%b5%d9Q%dd1%d7%da%15%01A!%10%00<vC%00Y%0d%00.-%f9%00$%0d%08hFn$2}fW%010%99%ef%b3%02%00%01L%00%06this$0t%00<z%0c%02%19T%00/%0dL%19T%08;xr~$%01%19?%15%93%0cKeyey5%1c%175%d0%c0L%83)&%01%e3%08r%00N%be%e1%00%00FI%ee%1cAbstract:%f6%02%18%16%ffdM~%11%1a%25%cf!@%006%aa_%00%10unt$C%01%06$Fn%19z%11&|%8fD%a2%09%a4%00:%aaE%00e%9291%1c%ac;E%9a%f5%b5%9d%c6%09I%fe%ed%00%14Global-%96$Fn%0a%caF%c0q%b8IM%01]%01%ed%00,v%a8%00m=m%e58Q%f3T%e0*%84%92%aa%02%00%02L%00%08k%81:%14derq%00~A-%14%0avalueE%d3%05%12%a2Z%03%0d],Base%e9%16%97n%f8%05O%bf%01%9e%01E%10%0asr%004%92%a2%00$StringUtf8%05%82%1c%c0%12%9a%b7%e1%02%9b-%11I%10%08sr%00.%92I%00%0cVoid%05C%1c.%1f+%a3%076`%04.C%00%00_vC%00$repackaged2l%00%b0ommon.collect.ImmutableList$SerializedForm%00%00%00%05%02D%02%00%01[%00%08elementst%00%13[%bdK(Object;xpur%11%19%00.%a1d%00.%0d%19%1c%90%ceX%9f%10s)l%01%b9%00p%01O%86E%01%a1_%00.B_%05%b0%cd&%c7yV%d02%ba%02%00%0aZ%00%18allowedLatenessSpecifiedZ%00%0dmode%1d%100%15outputTimeFn%1d%18%1c%10trigger%15%13%08L%00%0f:V%00`t%00%18Lorg/joda/time/Duratio%c1%9cH%0fclosingBehaviort%00K%a6%98%04%00w%d1=%cdG%04$C6M%00%0c;L%00%04%01%c8%08t%00GzU%00!-%0dE%00i%d9%c4%08$Ac%ed%cb%14ionMod%c1%ea%00%0c.%09%01%08t%00AzY%00%b9%07%1d%ae%00O=L%e1%a0-D%9a3%07%0cExecIn%00T)|%0c;L%00%08)%0b%10Fnt%00=%ce%92%00I(%08Fn;E^ %01sr%00%16org.!%b3%00.!%b3%00.1%b3%1c%00%00%02?zQ%ce%d6A%89%08r%00%1f6%25%00%10base.a%f4%1d.DY%19:%f4%8e%02%00%01J%00%07iMillis%05c%05%01%0c~r%00Iv~%039?%00.%09%e2%0cing.%09%ad>%ed%01%05R%0c%00%00%00%12%12%01%08%00%0e%0e%a7%08iC%08Enuu%85%01%1d`pt%00%11FIRE_IF_NON_EMPTY~r%00Ev%8b%00A#%0d{n#%02%01%83%01%01%01j%81%ef8-t%00%16DISCARDING_%01y(D_PANESsr%00]vs%00j%fe%00%08Fn$IFDAtEarliestAssigneda%a44stamp%bf%97%e5%aa%b5%f3%a2&%02%a1%cb%00%08)@%04Fn%01%95%10'xr%00H%ca|%00%09s%01aHFn$DefaultsB%5c%e7%dc%ccABDI%13%00?%faW%00%1c%89%f1s%acX%13%e1%1d%01N%c1%cd%00@%caP%00%e9 I' s%f3%88D%c5%25>%14%03%01Q%82%e5%01Rr%01(NonMergingW%85q$FnB%1cF9%bd%06%b8%1a%09T%00;%ca%a3%00%11J%1c%8eii%ba6:%25%cc%01J%01%efz%1a%07%00u%0e%7f%0cB%01%04%98f%a3%88%8d%b9%82V %02%00%04I%00%16firstIndexAfterSubtreeI%00%0c%8dg%05%1b%18L%00%0bsubT%89A%0cst%00%10%c9%8d%01`%10/List2%97%04%00<%ceS%04%0d%5c%8dRa%13%0csr%00%13e%97%01f%14.Array%01kDx%81%d2%1d%99%c7a%9d%03%00%01I%00%04size%89%22%04w%04%015%10xsr%00A%caa%01M%9e%0d%86%1c0%15Y%b6g%1f%8a%a0!g%00r%aa%c9%09i5%0cing.%0dI%18%87%8fm%a0%e2{%afiT.C%010q%00~%00<xppq%00~%00:"
+      },
+      "non_parallel_inputs" : { },
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WordCountTemplate.CountWords/Count.PerElement/Count.PerKey/Combine.GroupedValues"
+      },
+      "display_data" : [ {
+        "namespace" : "com.google.cloud.dataflow.sdk.transforms.Combine$GroupedValues",
+        "key" : "combineFn",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.transforms.Count$CountFn",
+        "shortValue" : "CountFn",
+        "label" : "Combiner"
+      } ],
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s4"
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WordCountTemplate.CountWords/Count.PerElement/Count.PerKey/Combine.GroupedValues.out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.coders.KvCoder",
+            "component_encodings" : [ {
+              "@type" : "com.google.cloud.dataflow.sdk.coders.StringUtf8Coder"
+            }, {
+              "@type" : "com.google.cloud.dataflow.sdk.coders.VarLongCoder"
+            } ],
+            "is_pair_like" : {
+              "@type" : "http://schema.org/Boolean",
+              "value" : true
+            }
+          }, {
+            "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ],
+      "encoding" : {
+        "@type" : "com.google.cloud.dataflow.sdk.coders.VarLongCoder"
+      }
+    }
+  }, {
+    "kind" : "ParallelDo",
+    "name" : "s6",
+    "properties" : {
+      "serialized_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "%82SNAPPY%00%00%00%00%01%00%00%00%01%00%00%06%fc%b2%1c%f0L%ac%ed%00%05sr%00+com.google.cloud.dataflow.sdk.util.DoFnInfo%c3|%e8%c2%d1&%cc%89%02%00%04L%00%04doFnt%00/Lcom/%09A%00/%05A%00/%11A</sdk/transforms/%01GD;L%00%0ainputCodert%00,Lv?%00%00c%01'%04s/%05. ;L%00%0esideI%01@%c8Viewst%00%14Ljava/lang/Iterable;L%00%11windowingStrategyt%006zk%00%14util/W>8%00%18;xpsr%006v&%01%19%e5%88.MapElements$1%89%f1%c1%aeEV%de%be%02%00%01L%00%06this$0t%82%89%00%19N%00/%1dN%10;xr%00-%a2%87%00!l%909%cf%e4%fb!%1e5%f2%02%00%02Z%00%13aggregatorsAreFinalL%00%0ba%19%16%08t%00%0f)M%25%09(Map;xp%00sr%00%11!bI%09%c0HashMap%05%07%da%c1%c3%16`%d1%03%00%02F%00%0aloadFactorI%00%09thresholdxp?@%00%00%01%02%14w%08%00%00%00%10%01%0a%10xsr%004%a2%c3%00%1d%fc%1c{d%e7HF%a1d%d3%25H%14%02fnt%00?z%cd%01=D%1cSerializA%1b%1cFunction!M%003%a2%8a%00%04PTQ%c50#2%8d%0a&%06%e5%0f%03%00%00xp%01%cf%00FfE%00%18integra%01o%c0.WordCountTemplate$FormatAsTextFn%14%f5<%d2%94X%89g%02%00%00xr%007cr%94%03%19%dc%14.Simpl%15%d6%1cT%10%a6%01_%e3%9c%bd%01FA%b6%00,f%9d%00%0csdk.i%5c%08.Kve^@Q%f3T%e0*%84%92%aa%02%00%02L%00%08key%05%16%08q%00~%01%10%14%0avalue%19%12%0cxr%000%ae]%00,Base%e9%16%97n%f8%05O%bf%01%9e%08r%002%92?%00%14Standa!<(der%b5%d9Q%dd1%d7%da%15%01A%01%dfzK%02%00c%014,s.StringUtf8%05%bf%1c%c0%12%9a%b7%e1%02%9b-%01E%9e%c5%00%14Atomic%05?%1c%bc%cc%83sIN%19%ce%09?%00?%92%c5%000Deterministic2%d2%00%1c%a0 <%80%cb%ad%a4m%01N!j%10%16sr%001%92T%00%18VarLong%05%94%1c%0cG%ee%86%f5%99%01v%11F%10%19sr%00_vF%00(repackaged..)%00Hommon.collect.Immuta6%10List$qG%04edA%bb%00%00%0d%01%18%02%00%01[%00%08e%8d%f2%0ct%00%13[%89D%a5%91(Object;xpur%11%19%00.%01%19%00.%0d%19%1c%90%ceX%9f%10s)l%01%b9%00p%01Q%86 %04%81%9c%00.B%a5%05%b0%cd&%c7yV%d02%ba%02%00%0aZ%00%18allowedLatenessSpecifiedZ%00%0dmode%1d%100%15outputTimeFn%1d%18%1c%10trigger%15%13%08L%00%0f:V%00Lt%00%18Lorg/joda/time/Dui%edT;L%00%0fclosingBehaviort%00K%a6%b0%04%d5%bb%cd%8d%04$C6M%00%0c;L%00%04%01%c8%08t%00GzU%00!-%0dE%04in%f5%0a%1c$Accumul%85%9a%08Mod%e10%00%0c.%09%01%08t%00AzY%00%99%82%1d%ae%00O=L%0c;L%00%07-D%08t%006zN%00%05%a7%0cExecIn%00T)|%0c;L%00%08)%0b%10Fnt%00=zD%00R%92%00I(%04Fn%c1%c9(%00%00%01sr%00%16org.!%b3%00.!%b3%00.1%b3%1c%00%00%02?zQ%ce%d6A%89%08r%00%1f6%25%00 base.Base%1d.DY%19:%f4%8e%02%00%01J%00%07iMillisI%c1%01%01%0c~r%00I.U%03%00lBU%09%19%ad%00.%09%e2%0cing.%09%ad>%ed%01%01Q%01%01%04%12%00%c1%19%00%0e%e5%8beC%08Enuu%85%01%1d`pt%00%11FIRE_IF_NON_EMPTY~r%00Ev%8b%00!|%0d{n#%02%01%83%01%01%01j%81%a98/t%00%16DISCARDING_%01y(D_PANESsr%00]vs%00j%fe%00%08Fn$IFDAtEarliestAssigneda%a40stamp%bf%97%e5%aa%b5%f3%a2&%12%0c%08%00%08)@%04Fn%01%95%10)xr%00H%ca|%00%09s%01aHFn$DefaultsB%5c%e7%dc%ccABDI%13%00?%faW%00%1c%89%f1s%acX%13%e1%1d%01N%c1%bb%00@%caP%00%14GlobalI' s%f3%88D%c5%25>%14%03%01Q%82%e5%01Rr%01(NonMergingW%12%f4%0a$FnB%1cF9%bd%06%b8%1a%09T%00;%ca%a3%00%11J%1c%8eii%ba6:%25%cc%01J%01%efz%aa%07%00u%0ee%0cB%01%04%98f%a3%88%8d%b9%82V %02%00%04I%00%16firstIndexAfterSubtreeI%00%0c%8dg%05%1b%18L%00%0bsubT%89A%0cst%00%10%c9%8d%01`%10/List2%97%04%00<%ceS%04%0d%5c%8dRa%13%0csr%00%13e%97%01f%14.Array%01kDx%81%d2%1d%99%c7a%9d%03%00%01I%00%04size%89%22%04w%04%015%0e;%0a%00A%caa%01M%9e%0d%86%1c0%15Y%b6g%1f%8a%a0!g%08r%00:%caP%00%0dI%18%87%8fm%a0%e2{%afiT.C%010q%00~%00>xppq%00~%00<"
+      },
+      "non_parallel_inputs" : { },
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "MapElements/Map"
+      },
+      "user_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "com.google.cloud.dataflow.sdk.transforms.MapElements$1"
+      },
+      "display_data" : [ {
+        "namespace" : "com.google.cloud.dataflow.sdk.transforms.MapElements$1",
+        "key" : "mapFn",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.integration.WordCountTemplate$FormatAsTextFn",
+        "shortValue" : "FormatAsTextFn",
+        "label" : "Map Function"
+      }, {
+        "namespace" : "com.google.cloud.dataflow.sdk.transforms.ParDo$Bound",
+        "key" : "fn",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.transforms.MapElements$1",
+        "shortValue" : "",
+        "label" : "Transform Function"
+      } ],
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s5"
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "MapElements/Map.out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.coders.StringUtf8Coder"
+          }, {
+            "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ]
+    }
+  }, {
+    "kind" : "CreateCollection",
+    "name" : "s7",
+    "properties" : {
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/Create.Values"
+      },
+      "display_data" : [ ],
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/Create.Values.out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$ValueOnlyWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.coders.SerializableCoder",
+            "encoding_id" : {
+              "@type" : "http://schema.org/Text",
+              "value" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSink$TextWriteOperation:-4333914180269848743"
+            },
+            "type" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSink$TextWriteOperation"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ],
+      "element" : [ {
+        "@type" : "http://schema.org/Text",
+        "value" : "%ac%ed%00%05sr%00Ccom.google.cloud.dataflow.sdk.io.TextIO$TextSink$TextWriteOperation%c3%da%d8%03%dd%fc%c7Y%02%00%03L%00%05codert%00,Lcom/google/cloud/dataflow/sdk/coders/Coder;L%00%06footert%00%12Ljava/lang/String;L%00%06headerq%00~%00%02xr%00Fcom.google.cloud.dataflow.sdk.io.FileBasedSink$FileBasedWriteOperation-Zd%91%22n3%fc%02%00%03L%00%15baseTemporaryFilenamet%005Lcom/google/cloud/dataflow/sdk/options/ValueProvider;L%00%04sinkt%000Lcom/google/cloud/dataflow/sdk/io/FileBasedSink;L%00%16temporaryFileRetentiont%00_Lcom/google/cloud/dataflow/sdk/io/FileBasedSink$FileBasedWriteOperation$TemporaryFileRetention;xr%004com.google.cloud.dataflow.sdk.io.Sink$WriteOperation%e1%bf%90%e0=%c8L%90%02%00%00xpsr%00Hcom.google.cloud.dataflow.sdk.options.ValueProvider$RuntimeValueProvider%08%22%b4%86%22%91CP%02%00%05L%00%0cdefaultValuet%00%12Ljava/lang/Object;L%00%05klasst%00%11Ljava/lang/Class;L%00%0amethodNameq%00~%00%02L%00%09optionsIdt%00%10Ljava/lang/Long;L%00%0cpropertyNameq%00~%00%02xppvr%00Hcom.google.cloud.dataflow.integration.WordCountTemplate$WordCountOptions%00%00%00%00%00%00%00%00%00%00%00xpt%00%09getOutputsr%00%0ejava.lang.Long;%8b%e4%90%cc%8f#%df%02%00%01J%00%05valuexr%00%10java.lang.Number%86%ac%95%1d%0b%94%e0%8b%02%00%00xp%00%00%00%00%00%00%00%00t%00%06outputsr%000com.google.cloud.dataflow.sdk.io.TextIO$TextSink%f4dm%84%05%a2f%c6%02%00%03L%00%05coderq%00~%00%01L%00%06footerq%00~%00%02L%00%06headerq%00~%00%02xr%00.com.google.cloud.dataflow.sdk.io.FileBasedSink,&%e3%19%c9P%8dh%02%00%03L%00%12baseOutputFilenameq%00~%00%04L%00%09extensionq%00~%00%02L%00%12fileNamingTemplateq%00~%00%02xr%00%25com.google.cloud.dataflow.sdk.io.SinkJ%e2%ca%d3%ec%1c%0e%7f%02%00%00xpq%00~%00%0dt%00%00t%00%0f-SSSSS-of-NNNNNsr%004com.google.cloud.dataflow.sdk.coders.StringUtf8Coder%c0%12%9a%b7%e1%02%9b-%02%00%00xr%000com.google.cloud.dataflow.sdk.coders.AtomicCoder%bc%cc%83sIN%19%ce%02%00%00xr%00?com.google.cloud.dataflow.sdk.coders.DeterministicStandardCoder%a0 <%80%cb%ad%a4m%02%00%00xr%002com.google.cloud.dataflow.sdk.coders.StandardCoder%b5%d9Q%dd1%d7%da%15%02%00%00xppp~r%00]com.google.cloud.dataflow.sdk.io.FileBasedSink$FileBasedWriteOperation$TemporaryFileRetention%00%00%00%00%00%00%00%00%12%00%00xr%00%0ejava.lang.Enum%00%00%00%00%00%00%00%00%12%00%00xpt%00%06REMOVEq%00~%00%1fpp"
+      } ]
+    }
+  }, {
+    "kind" : "ParallelDo",
+    "name" : "s8",
+    "properties" : {
+      "serialized_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "%82SNAPPY%00%00%00%00%01%00%00%00%01%00%00%08%d9%e2#%f0L%ac%ed%00%05sr%00+com.google.cloud.dataflow.sdk.util.DoFnInfo%c3|%e8%c2%d1&%cc%89%02%00%04L%00%04doFnt%00/Lcom/%09A%00/%05A%00/%11A</sdk/transforms/%01GD;L%00%0ainputCodert%00,Lv?%00%00c%01'%04s/%05. ;L%00%0esideI%01@%c8Viewst%00%14Ljava/lang/Iterable;L%00%11windowingStrategyt%006zk%00%14util/W>8%00%18;xpsr%00.v&%01%98io.Write$Bound$1%e38%04%e2%a4%08%ce%19%02%00%01L%00%06this$0t%00.z%81%00%08io/%1dF%10;xr%00-vw%009%5c%00.!%5c%909%cf%e4%fb!%1e5%f2%02%00%02Z%00%13aggregatorsAreFinalL%00%0ba%19%16%08t%00%0f)=%05%f9(Map;xp%00sr%00%11!R)%f9%c0HashMap%05%07%da%c1%c3%16`%d1%03%00%02F%00%0aloadFactorI%00%09thresholdxp?@%00%00%01%02%14w%08%00%00%00%10%01%0a%10xsr%00,v%c3%006:%01%80`m%e9%89%88upk%02%00%02I%00%09numShardsL%00%04sinkt%00'%86B%01%0cSink!;%003vx%00=;%04PTQ%a34#2%8d%0a&%06%e5%0f%03%00%00xpx%01%c2%0csr%000vI%00$io.TextIO$%01%07%01~4%f4dm%84%05%a2f%c6%02%00%03L%00%05E%c1,q%00~%00%02L%00%06footA%f6%00%12)yE%b68String;L%00%06heade%05,%04%12x%8es%02 FileBased%01v%1c,&%e3%19%c9P%8dh%05v(%12baseOutput%01%25%18namet%005z=%01Loptions/ValueProvideat%90%09extensionq%00~%00%12L%00%12fileNamingTemplateq%01%1a%0cxr%00%25%82-%01%01%ac J%e2%ca%d3%ec%1c%0e%7f%02!h%0csr%00Hv6%00%0d%99%00.2%99%00%1c$Runtime2%15%00P%08%22%b4%86%22%91CP%02%00%05L%00%0cdefault%05%22%00t2t%01DObject;L%00%05klasst%00%11=%91%00C%01%13%81%a8 methodNam%09%df%08L%00%09%0d%8a%10Idt%00%10%1d2%04Lo%25%c1 %0cproperty%153%10xppvrn%df%00%18integra!y$.WordCount1U%00$%15%12%00O)%9bA%92%0d%01%1cxpt%00%09get)%e5%0csr%00%0ee%b6AR%00.%05%8f4%8b%e4%90%cc%8f#%df%02%00%01J%00%05v!%d3%0cxr%00%10%19%254Number%86%ac%95%1d%0b%94%e0%8b%25%8a%0d[%10%00t%00%06oE<%00t%01%0c%08%0f-S%01%01%10-of-N%01%01%0csr%004v%b0%01%00c%a5%b4%04.SE%d9%0cUtf8%a5%be%1c%c0%12%9a%b7%e1%02%9b-%01k%82V%03%0dC%14Atomic%05?%1c%bc%cc%83sIN%19%ce%09?%00?%92%82%00HDeterministicStanda!c(der%a0 <%80%cb%ad%a4m%09N%002%92N%002A%00%1c%b5%d9Q%dd1%d7%da%15%01A%04ppA%c5%006%96E%00%18erializ%c1%a8%05%d8%1c<pi%e0%f2%0d%82x%c5+%0c%04typEm%04%19xal%10&vr%00CvW%00F%7f%04%00$%81%88%c5H%08OpeI[%1c%c3%da%d8%03%dd%fc%c7Y%85%1cN%92%04%01m%00%12B%82%04%00F%82{%00%81]%00B%91%82%00$%15%0e6~%00%1c-Zd%91%22n3%fc%05~%00%15%81%9aA%e1%10orary%012%81%9d%01%80%00%14%b5%e6%000z%a9%04%08io/%019%15y%18;L%00%16tem%19S%10RetenaT%08t%00_%baL%00^%c5%00%00$2%b4%00%15a%c1jz%0e%03%04io%85%f4%00$6%15%01%1c%e1%bf%90%e0=%c8L%90E@%0csr%00_vl%01$repackaged2%8a%08Hommon.collect.ImmutAY%10List$Qj%14edFormq%dcH%02%00%01[%00%08elementst%00%13[L%81%14%c9%8b%ad%17%0cxpur%11%19%89R%0d%19%1c%90%ceX%9f%10s)l%05%b5%01R%86%0c%04%0e%5c%08%00.BU%09%b0%cd&%c7yV%d02%ba%02%00%0aZ%00%18allowedLatenessSpecifiedZ%00%0dmode%1d%10%00%15%89%98%14TimeFn%1d%18%1c%10trigger%15%13%08L%00%0f:V%000t%00%18Lorg/joda/%c19%08/Dui%1eT;L%00%0fclosingBehaviort%00Kz8%02&@%08%00/%22k%0a%1a=%0a%04$C6M%00%0c;L%00%04%01%c8%08t%00GzU%00!-%0dE%04in%22%ba%0a%1c$Accumul%c5&%08Mod%0e%e0%0a%00%0c.%09%01%08t%00AzY%00R%ae%00%c9;)L%0c;L%00%07-D%08t%006zN%00%05%a7%0cExecIn%00T)|%0c;L%00%08)%0b%10Fnt%00=zD%00R%92%00I(%0cFn;xQ^%10%16org.!%b3%00.!%b3%00.1%b3%1c%00%00%02?zQ%ce%d6A%89%08r%00%1f6%25%00%81b%00.%81%1d%1d.%10Y%19:%f4%8e%e5%0c%1c%07iMillis%09c%01%01%0c~r%00Iv~%03%19%ad%00.%09%e2%0cing.%09%ad>%ed%01%01Q%01%01%0c%12%00%00x2%95%07%08Enuu%85%01%1d`pt%00%11FIRE_IF_NON_EMPTY~r%00Ev%8b%00!|%0d{n#%02%01%83%01%01%01j%a1]8Ct%00%16DISCARDING_%01y(D_PANESsr%00]vs%00j%fe%00%08Fn$IFDAtEarliestAssignedAX0stamp%bf%97%e5%aa%b5%f3%a2&%c5%e1U%22%01%95%04=xr%1c%09%08sdkV|%00%09s%01a%0cFn$D%16%e5%09 sB%5c%e7%dc%ccABDI%13%00?%ca%d3%00.W%00%1c%89%f1s%acX%13%e1%1d%01N%a1%9f%00@%caP%00%14GlobalI' s%f3%88D%c5%25>%14%03%01Q%82%e5%01Rr%01(NonMergingW%12%a4%0e$FnB%1cF9%bd%06%b8%1a%09T%00;%ca%a3%00%11J%1c%8eii%ba6:%25%cc%01J%01%efz%d3%06E%85B%01%04%98f%a3%88%8d%b9%82V %02%00%04I%00%16firstIndexAfterSubtreeI%00%0c%8dg%05%1b%14L%00%0bsub%8dA%08st%00%1aU%0b%01`%00/%c1%c52%97%04%00<%ceS%04%0d%5c%89R%00%01a%13%0csr%00%13%c1%f3%09%c6%10Array%01k,x%81%d2%1d%99%c7a%9d%03%00%01I%0eo%0e%04ze%89%22%04w%04%015%0e%ca%0e%00A%caa%01M%9e%0d%86%1c0%15Y%b6g%1f%8a%a0!g%08r%00:%caP%00%0dI%18%87%8fm%a0%e2{%afiT.C%010q%00~%00Rxppq%00~%00P"
+      },
+      "non_parallel_inputs" : { },
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/Initialize"
+      },
+      "user_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "com.google.cloud.dataflow.sdk.io.Write$Bound$1"
+      },
+      "display_data" : [ {
+        "namespace" : "com.google.cloud.dataflow.sdk.transforms.ParDo$Bound",
+        "key" : "fn",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.io.Write$Bound$1",
+        "shortValue" : "",
+        "label" : "Transform Function"
+      } ],
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s7"
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/Initialize.out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.coders.SerializableCoder",
+            "encoding_id" : {
+              "@type" : "http://schema.org/Text",
+              "value" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSink$TextWriteOperation:-4333914180269848743"
+            },
+            "type" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSink$TextWriteOperation"
+          }, {
+            "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ]
+    }
+  }, {
+    "kind" : "ParallelDo",
+    "name" : "s9",
+    "properties" : {
+      "serialized_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "%82SNAPPY%00%00%00%00%01%00%00%00%01%00%00%08%9d%88#%f0L%ac%ed%00%05sr%00+com.google.cloud.dataflow.sdk.util.DoFnInfo%c3|%e8%c2%d1&%cc%89%02%00%04L%00%04doFnt%00/Lcom/%09A%00/%05A%00/%11A</sdk/transforms/%01GD;L%00%0ainputCodert%00,Lv?%00%00c%01'%04s/%05. ;L%00%0esideI%01@%c8Viewst%00%14Ljava/lang/Iterable;L%00%11windowingStrategyt%006zk%00%14util/W>8%00%18;xpsr%00%8ev&%01 runners.D-; PipelineR%05%18%1c$GroupBy%09%5c,HashAsKeyAnd%09%120AsSortKey$Use%09%13j%25%00!F@r'5%14%d5%00%8d%da%02%00%01L%00%0fism%25 %08For%018%08t%00Gz%ea%00%0d%afh/worker/IsmFormat$IsmRecord%05P%10;xr%00-v%f9%009%de%00.%01%98%909%cf%e4%fb!%1e5%f2%02%00%02Z%00%13aggregatorsAreFinalL%00%0ba%19%16%08t%00%0f)%bf%25{(Map;xp%00sr%00%11!%d4I{%01%d1%b0Map%05%07%da%c1%c3%16`%d1%03%00%02F%00%0aloadFactorI%00%09thresholdxp?@%00%00%01%02%14w%08%00%00%00%10%01%0a%10xsr%00Ev%c3%00-%0d%00.)%0d%00.^%0d%01d%b9y%9a0%f4W%0d%da%02%00%04I%00%1enumberOfMetaA%ef%1cShardKey%258%0csI%00%16%11!6%19%00%0cL%00%12k%01%25%14mponeni%04%0cst%00%10=%06%0cLista%25%10value%05O q%00~%00%02xr%002v%c8%00i*%18.Standa-%c20%b5%d9Q%dd1%d7%da%15%02%00%00xp!%10%1c%00%00%00%01sr%00_vK%00(repackaged..)%00Hommon.collect.Immutao%01%b2($SerializedAK%01h%01%01D%02%00%01[%00%08elementst%00%13[%09%eae%af(Object;xpur%11%19%00.%01%19%00.%0d%19%1c%90%ceX%9f%10s)l%11%bd%01%b9z%cc%01]%8f%95%01%18.GlobaliX%00$%25R%1ck%e5B3%00:%e8M%01Z%08r%000.%e4%00F%02%05-X%14Atomic%05?%1c%bc%cc%83sIN%19%ce%09?%00?%92?%000Deterministic2%a4%01%1c%a0 <%80%cb%ad%a4m%01N!%eb%10%0fsr%00GvT%00a/%00.%09%d1%08edVA)%0c$Ful%0d%e3%0d%12%05%aa4%96%9d%a7%92%a6%bf%d2%17%02%00%02L%00%0b)%13%05%19%01i%0c%02L%00%0c%09%13%00s%19%14%0cxr%00C%c2}%002%8b%00%05L%1c%1d%05k%a0%10%9c%17%f8%85%a1B%cc%02%01~%01%e7%006vj%00-zQ[Al%05]%1c<pi%e0%f2%0d%82x%05] %04typet%00%11L%814IY%14Class;%05f%04%17v%82%d0%00$io.TextIO$%01%07%0cSink%05%09lWriteOperation%c3%da%d8%03%dd%fc%c7Y%02%00%03L%00%05%05%99%01%c5%1c%02L%00%06foot%c1%ca%00%12%1d%828String;L%00%06heade%05,%10!xr%00Fv%f1%00,io.FileBased%05%89%15%0e6%8e%00%1c-Zd%91%22n3%fc%05%8e4%15baseTemporary%012%18namet%005z%05%06%04op%01%d9%04s/E@%18Provide%e1c%1c%04sinkt%000z?%00%08io/%01l%15%ac%10;L%00%16t.%86%00%10Reten%01c%08t%00_%baL%00^%f8%00%00$2%e7%00%15a%c1%a8%004%82Z%01%25Q6H%01%1c%e1%bf%90%e0=%c8L%90a{%00p!%d0%08%19sr~J%00%00c%12%91%08%04.C%a9%06%08ionE%93%1c%df%d7%a4%5c%91%0a%be%f4%01J%00r%9a%d8%02%00I%1a%af%08%08LikI%d8%1cP%d9%ed/l%d2%ac%f8e%ae%00%0c%ad6%05_%01%9ca%af%00i%0d3%0cName%01%14%00!E%e5%00%0f%01%0b%0c%19t%00%0a%19%95%00s%01%13%00%1d%01%05%00'%05%0b%04%11u%01%0c%00%14%a1%94%86%e3%00%9d_*A%09%b0%cd&%c7yV%d02%ba%02%00%0aZ%00%18allowedLatenessSpecifiedZ%00%0dmode%1d%100%15outputTimeFn%1d%18%1c%10trigger%15%13%08L%00%0f:V%00Lt%00%18Lorg/joda/time/Dui%90T;L%00%0fclosingBehaviort%00Kzg%02%d9%1e%00/%89%f8%08ing%1a%f1%09%04$C6M%00%0c;L%00%04%01%c8%86L%09!-%0dE%04in%22n%0a%1c$Accumul%85=%08Mod%0e%94%0a%00%0c.%09%01%08t%00A%ce%ae%00%00O=L%0c;L%00%07-D%08t%006zN%00%05%a7%0cExec%e9%b4%00T)|%0c;L%00%08)%0b%10Fnt%00=zD%00j@%01%04Fn%0e%bb%09%04%00%00A^%10%16org.!%b3%00.!%b3%00.1%b3%1c%00%00%02?zQ%ce%d6i#%00%1f6%25%00%81%c4%10.Base%1d.DY%19:%f4%8e%02%00%01J%00%07iMillis%22%c4%08%10%00~r%00Iv%f2%03%19%ad*%0b%08%c9%a9>%ed%01%01%b8%01%01%18%12%00%00xr%00%0e%c1I%16%89%08%08Enu%22%cb%08%01%1dXpt%00%11FIRE_IF_NON_EMPTY~r~%96%08!|%0d{n#%02%01%83%01%01%01ja%ae8;t%00%16DISCARDING_%01y(D_PANESsr%00]%e2%fe%00%08Fn$IFDAtEarliestAssigneda%a40stamp%bf%97%e5%aa%b5%f3%a2&%e5bU%22%01%95%105xr%00H%ca|%00%09s%01aHFn$DefaultsB%5c%e7%dc%ccABDI%13%00?%faW%00%1c%89%f1s%acX%13%e1%1d%01N%0e%b4%0d%00@%caP%00.,%0a s%f3%88D%c5%25>%14%03%01Q%82%e5%01Rp%02(NonMergingW%12X%0e$FnB%1cF9%bd%06%b8%1a%09T%00;%ca%a3%00%11J%1c%8eii%ba6:%25%cc%01J%01%efz%02%07E%85B%01%04%1cf%a3%88%8d%b9%82V %12%d6%0cd%16firstIndexAfterSubtreeI%00%0c%8dg%05%1b%14L%00%0bsub%8dA%c5]%00%0e.%89%04%00<%ceE%04%0dN%89D%00%01a%05%0csr%00%13e%89%05%b8%10Array%0eh%0c,x%81%d2%1d%99%c7a%9d%03%00%01I%0e%aa%08%04ze%89%14%04w%04%015%0e%ee%0d%00A%caS%01M%90%0d%86%1c0%15Y%b6g%1f%8a%a0!Y%08r%00:%caP%00%0dI%18%87%8fm%a0%e2{%afiFB5%01%1cxppq%00~%00H"
+      },
+      "non_parallel_inputs" : { },
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/View.AsSingleton/BatchViewAsSingleton/DataflowPipelineRunner.GroupByWindowHashAsKeyAndWindowAsSortKey/ParDo(UseWindowHashAsKeyAndWindowAsSortKey)"
+      },
+      "user_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "com.google.cloud.dataflow.sdk.runners.DataflowPipelineRunner$GroupByWindowHashAsKeyAndWindowAsSortKey$UseWindowHashAsKeyAndWindowAsSortKeyDoFn"
+      },
+      "display_data" : [ {
+        "namespace" : "com.google.cloud.dataflow.sdk.transforms.ParDo$Bound",
+        "key" : "fn",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.runners.DataflowPipelineRunner$GroupByWindowHashAsKeyAndWindowAsSortKey$UseWindowHashAsKeyAndWindowAsSortKeyDoFn",
+        "shortValue" : "UseWindowHashAsKeyAndWindowAsSortKeyDoFn",
+        "label" : "Transform Function"
+      } ],
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s8"
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/View.AsSingleton/BatchViewAsSingleton/DataflowPipelineRunner.GroupByWindowHashAsKeyAndWindowAsSortKey/ParDo(UseWindowHashAsKeyAndWindowAsSortKey).out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.coders.KvCoder",
+            "component_encodings" : [ {
+              "@type" : "com.google.cloud.dataflow.sdk.coders.VarIntCoder"
+            }, {
+              "@type" : "com.google.cloud.dataflow.sdk.coders.KvCoder",
+              "component_encodings" : [ {
+                "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+              }, {
+                "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+                "component_encodings" : [ {
+                  "@type" : "com.google.cloud.dataflow.sdk.coders.SerializableCoder",
+                  "encoding_id" : {
+                    "@type" : "http://schema.org/Text",
+                    "value" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSink$TextWriteOperation:-4333914180269848743"
+                  },
+                  "type" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSink$TextWriteOperation"
+                }, {
+                  "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+                } ],
+                "is_wrapper" : {
+                  "@type" : "http://schema.org/Boolean",
+                  "value" : true
+                }
+              } ],
+              "is_pair_like" : {
+                "@type" : "http://schema.org/Boolean",
+                "value" : true
+              }
+            } ],
+            "is_pair_like" : {
+              "@type" : "http://schema.org/Boolean",
+              "value" : true
+            }
+          }, {
+            "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ]
+    }
+  }, {
+    "kind" : "GroupByKey",
+    "name" : "s10",
+    "properties" : {
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/View.AsSingleton/BatchViewAsSingleton/DataflowPipelineRunner.GroupByWindowHashAsKeyAndWindowAsSortKey/DataflowPipelineRunner.GroupByKeyAndSortValuesOnly"
+      },
+      "display_data" : [ ],
+      "sort_values" : {
+        "@type" : "http://schema.org/Boolean",
+        "value" : true
+      },
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s9"
+      },
+      "disallow_combiner_lifting" : {
+        "@type" : "http://schema.org/Boolean",
+        "value" : true
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/View.AsSingleton/BatchViewAsSingleton/DataflowPipelineRunner.GroupByWindowHashAsKeyAndWindowAsSortKey/DataflowPipelineRunner.GroupByKeyAndSortValuesOnly.out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.coders.KvCoder",
+            "component_encodings" : [ {
+              "@type" : "com.google.cloud.dataflow.sdk.coders.VarIntCoder"
+            }, {
+              "@type" : "com.google.cloud.dataflow.sdk.coders.IterableCoder",
+              "component_encodings" : [ {
+                "@type" : "com.google.cloud.dataflow.sdk.coders.KvCoder",
+                "component_encodings" : [ {
+                  "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+                }, {
+                  "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+                  "component_encodings" : [ {
+                    "@type" : "com.google.cloud.dataflow.sdk.coders.SerializableCoder",
+                    "encoding_id" : {
+                      "@type" : "http://schema.org/Text",
+                      "value" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSink$TextWriteOperation:-4333914180269848743"
+                    },
+                    "type" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSink$TextWriteOperation"
+                  }, {
+                    "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+                  } ],
+                  "is_wrapper" : {
+                    "@type" : "http://schema.org/Boolean",
+                    "value" : true
+                  }
+                } ],
+                "is_pair_like" : {
+                  "@type" : "http://schema.org/Boolean",
+                  "value" : true
+                }
+              } ],
+              "is_stream_like" : {
+                "@type" : "http://schema.org/Boolean",
+                "value" : true
+              }
+            } ],
+            "is_pair_like" : {
+              "@type" : "http://schema.org/Boolean",
+              "value" : true
+            }
+          }, {
+            "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ]
+    }
+  }, {
+    "kind" : "ParallelDo",
+    "name" : "s11",
+    "properties" : {
+      "serialized_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "%82SNAPPY%00%00%00%00%01%00%00%00%01%00%00%08%80%8b#%f0L%ac%ed%00%05sr%00+com.google.cloud.dataflow.sdk.util.DoFnInfo%c3|%e8%c2%d1&%cc%89%02%00%04L%00%04doFnt%00/Lcom/%09A%00/%05A%00/%11A</sdk/transforms/%01GD;L%00%0ainputCodert%00,Lv?%00%00c%01'%04s/%05. ;L%00%0esideI%01@%c8Viewst%00%14Ljava/lang/Iterable;L%00%11windowingStrategyt%006zk%00%14util/W>8%00%18;xpsr%00xv&%01 runners.D-; PipelineR%05%18%14$Batch%01%b1%5cAsSingleton$IsmRecordFor%01%16,ularValuePer%09%86!04%dec%9bc%a6)%f8V%02%00%01L%00%0b%09%d6%25%0d q%00~%00%02xr%00-v%9a%009%7f%00.%01O%909%cf%e4%fb!%1e5%f2%02%00%02Z%00%13aggregatorsAreFinalL%00%0ba%19%16%08t%00%0f)`%25%1c(Map;xp%00sr%00%11!uI%1c%c0HashMap%05%07%da%c1%c3%16`%d1%03%00%02F%00%0aloadFactorI%00%09thresholdxp?@%00%00%01%02%14w%08%00%00%00%10%01%0a%10xsr%00E%a2%c3%00)%00$ing.Global)(%00$%25%118k%e5B3%00:%e8M%02%00%00xr%000vT%00IW%18.Atomic%05?%1c%bc%cc%83sIN%19%ce%09?%00?%92?%00PDeterministicStandard%05N%1c%a0 <%80%cb%ad%a4m%09N%002%92N%002A%00%1c%b5%d9Q%dd1%d7%da%15%01AA%81%00,%92C%00%04Kv%05~@Q%f3T%e0*%84%92%aa%02%00%02L%00%08key%05%16E2%0cL%00%0avAe%19%12%a2-%01%0d],Base%e9%16%97n%f8%05O%bf%01%9e%01W%04%0fs%9er%01%10VarIni%fd%1c%ffw7,%86)1%fc%11E%08%0dsr%9a*%01%00Im%e9%05%c5%1c-%8a%ea?3s-%d8%01G%08r%006%92(%01%11A%08Lik%09E%1cP%d9%ed/l%d2%ac%f8%252%14%0celeme%0d%a6%01%df%10%02L%00%0ci%0dt%18Namet%00%12i%17%85w%18String;-%09%010%00%11%05%06%10%0csr%00Gv%8f%00aW%00.I%c5%04ede%fd%0c$FulM%d7%0d%12%05%e5%1c%96%9d%a7%92%a6%bf%d2%17%05%a0B%07%04%08L%00%0ci%1a%00s%05-%01%83!%d7%00C%c2}%002%8b%00%05L%1c%1d%05k%a0%10%9c%17%f8%85%80B;%02%01j!%fc%96v%01%1cSerializ%a1%a4%05]%1c<pi%e0%f2%0d%82x%05] %04typet%00%11L%81%5c)Z%10Class)Y%0c%0dvr%00z%d0%00$io.TextIO$%01%07%0cSink%05%09pWriteOperation%c3%da%d8%03%dd%fc%c7Y%02%00%03L%00%05c%c1^%01%c5 %02L%00%06foote%05%0e%1c%18L%00%06head%0d%0e%0cxr%00FvK%01,io.FileBased%05y%15%0e6~%00%1c-Zd%91%22n3%fc%05~4%15baseTemporary%012%00nE%5c%005z%a8%06%04op%01%c9%04s/E0%18Provide%e1%1c%1c%04sinkt%000z?%00%08io/%01l%15%ac%10;L%00%16t.%86%00%10Reten%01c%08t%00_%baL%00^%f8%00%00$2%e7%00%15a%10;xr%004%82Z%01%25Q6H%01%1c%e1%bf%90%e0=%c8L%90a%f4%00p!%c0%04%1bs%82J%00%00c!%ec%1cs.Collec%01%dfE%83%1c%df%d7%a4%5c%91%0a%be%f4%01J%01I%00%17%01%05%0c%1bt%00%0a%19(%08t%00%08%910%0csr%00_v%b0%00(repackaged..)%00%18ommon.c%09|%14.Immuta%06%10List$q%17%00e%0e%0a%08%00m%e1%15%01%01%14%02%00%01[%00%08%8d%8a%14st%00%13[Ly%19(Object;xpur%11%19%00.%81%8c%00.%0d%19%1c%90%ceX%9f%10s)l%01%d6%00p%01N%86%1f%01%9d%8b*6%09%b0%cd&%c7yV%d02%ba%02%00%0aZ%00%18allowedLatenessSpecifiedZ%00%0dmode%1d%100%15outputTimeFn%1d%18%1c%10trigger%15%13%08L%00%0f:V%00Lt%00%18Lorg/joda/time/Dui%bcT;L%00%0fclosingBehaviort%00Kz%a3%02&%01%09%00/%a9$%08ing%1a%e6%09%04$C6M%00%0c;L%00%04%01%c8%08t%00GzU%00!-%0dE%04in%22c%0a%1c$Accumul%85i%08Mod%0e%89%0a%00%0c.%09%01%08t%00AzY%00R%ae%00%00O=L%0c;L%00%07-D%08t%006zN%00%05%a7%0cExecIn%00T)|%0c;L%00%08)%0b%10Fnt%00=zD%00R%92%00%c9(%04Fn%0e%0f%0a%04%00%00A^%10%16org.!%b3%00.!%b3%00.1%b3%1c%00%00%02?zQ%ce%d6A%89%08r%00%1f6%25%00%a1%00%10.Base%1d.DY%19:%f4%8e%02%00%01J%00%07iMillisI%c1%01%01%0c~r%00I.U%03F%ae%0c%19%ad*+%0a%09%ad>%ed%01%01Q%01%01%00%12%12/%0a%00%0ea%5ciC%08Enuu%85%01%1dXpt%00%11FIRE_IF_NON_EMPTY~r~%b6%0a!|%0d{n#%02%01%83%01%01%01j%81{8>t%00%16DISCARDING_%01y(D_PANESsr%00]%e2%fe%00%08Fn$IFDAtEarliestAssigneda%a40stamp%bf%97%e5%aa%b5%f3%a2&%e5%8eU%22%01%95%108xr%00H%ca|%00%09s%01aHFn$DefaultsB%5c%e7%dc%ccABDI%13%00?%faW%00%1c%89%f1s%acX%13%e1%1d%01N%0e(%0b%00@%caP%00.L%0c s%f3%88D%c5%25>%14%03%01Q%82%e5%01Rp%02(NonMergingW%12M%0e$FnB%1cF9%bd%06%b8%1a%09T%00;%ca%a3%00%11J%1c%8eii%ba6:%25%cc%01J%01%efz>%07E%85B%01%04%98f%a3%88%8d%b9%82V %02%00%04I%00%16firstIndexAfterSubtreeI%00%0c%8dg%05%1b%14L%00%0bsub%8dA%0cst%00%10%c9%8d%01`%00/%c1%c52%97%04%00<%ceS%04%0d%5c%89R%00%01a%13%0csr%00%13e%97%01f%14.Array%01k,x%81%d2%1d%99%c7a%9d%03%00%01I%0e%f4%08%04ze%89%22%04w%04%015%0eP%0e%00A%caa%01M%9e%0d%86%1c0%15Y%b6g%1f%8a%a0!g%08r%00:%caP%00%0dI%18%87%8fm%a0%e2{%afiT.C%010q%00~%00Mxppq%00~%00K"
+      },
+      "non_parallel_inputs" : { },
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/View.AsSingleton/BatchViewAsSingleton/ParDo(IsmRecordForSingularValuePerWindow)"
+      },
+      "user_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "com.google.cloud.dataflow.sdk.runners.DataflowPipelineRunner$BatchViewAsSingleton$IsmRecordForSingularValuePerWindowDoFn"
+      },
+      "display_data" : [ {
+        "namespace" : "com.google.cloud.dataflow.sdk.transforms.ParDo$Bound",
+        "key" : "fn",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.runners.DataflowPipelineRunner$BatchViewAsSingleton$IsmRecordForSingularValuePerWindowDoFn",
+        "shortValue" : "IsmRecordForSingularValuePerWindowDoFn",
+        "label" : "Transform Function"
+      } ],
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s10"
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "use_indexed_format" : {
+          "@type" : "http://schema.org/Boolean",
+          "value" : true
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/View.AsSingleton/BatchViewAsSingleton/ParDo(IsmRecordForSingularValuePerWindow).out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.runners.worker.IsmFormat$IsmRecordCoder",
+            "component_encodings" : [ {
+              "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+            }, {
+              "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+              "component_encodings" : [ {
+                "@type" : "com.google.cloud.dataflow.sdk.coders.SerializableCoder",
+                "encoding_id" : {
+                  "@type" : "http://schema.org/Text",
+                  "value" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSink$TextWriteOperation:-4333914180269848743"
+                },
+                "type" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSink$TextWriteOperation"
+              }, {
+                "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+              } ],
+              "is_wrapper" : {
+                "@type" : "http://schema.org/Boolean",
+                "value" : true
+              }
+            } ],
+            "num_shard_coders" : {
+              "@type" : "http://schema.org/Integer",
+              "value" : 1
+            },
+            "num_metadata_shard_coders" : {
+              "@type" : "http://schema.org/Integer",
+              "value" : 0
+            }
+          }, {
+            "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ]
+    }
+  }, {
+    "kind" : "CollectionToSingleton",
+    "name" : "s12",
+    "properties" : {
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/View.AsSingleton/BatchViewAsSingleton/View.CreatePCollectionView"
+      },
+      "display_data" : [ ],
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s11"
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/View.AsSingleton/BatchViewAsSingleton/View.CreatePCollectionView.out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.coders.IterableCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+            "component_encodings" : [ {
+              "@type" : "com.google.cloud.dataflow.sdk.runners.worker.IsmFormat$IsmRecordCoder",
+              "component_encodings" : [ {
+                "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+              }, {
+                "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+                "component_encodings" : [ {
+                  "@type" : "com.google.cloud.dataflow.sdk.coders.SerializableCoder",
+                  "encoding_id" : {
+                    "@type" : "http://schema.org/Text",
+                    "value" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSink$TextWriteOperation:-4333914180269848743"
+                  },
+                  "type" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSink$TextWriteOperation"
+                }, {
+                  "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+                } ],
+                "is_wrapper" : {
+                  "@type" : "http://schema.org/Boolean",
+                  "value" : true
+                }
+              } ],
+              "num_shard_coders" : {
+                "@type" : "http://schema.org/Integer",
+                "value" : 1
+              },
+              "num_metadata_shard_coders" : {
+                "@type" : "http://schema.org/Integer",
+                "value" : 0
+              }
+            }, {
+              "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+            } ],
+            "is_wrapper" : {
+              "@type" : "http://schema.org/Boolean",
+              "value" : true
+            }
+          } ],
+          "is_stream_like" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ]
+    }
+  }, {
+    "kind" : "Bucket",
+    "name" : "s13",
+    "properties" : {
+      "serialized_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "%82SNAPPY%00%00%00%00%01%00%00%00%01%00%00%03%b9%a2%0f%f0l%ac%ed%00%05sr%004com.google.cloud.dataflow.sdk.util.WindowingStrategy%cd&%c7yV%d02%ba%02%00%0aZ%00%18allowedLatenessSpecifiedZ%00%0dmodeSpec%0d%100%15outputTimeFn%1d(%1c%10trigger%15%13%0cL%00%0fa6V%00%d0t%00%18Lorg/joda/time/Duration;L%00%0fclosingBehaviort%00KLcom/%09%d8%00/%05%d8%00/%11%d8D/sdk/transforms/wi%0d%de%00/%09%e8%04$C6M%00,;L%00%04modet%00GLvU%00%0cutil%0dE%04in5-%1c$Accumul%05%ad%1cMode;L%00%0c.%09%01%08t%00AzY%00R%ae%00%04Ou9L%0c;L%00%07-D%08t%006zN%00%05%a7(ExecutableT)|%0c;L%00%08)%0b%10Fnt%00=zD%00R%92%00)@@Fn;xp%00%01%00%01sr%00%16org.!%b3%00.!%b3%00.1%b38%00%00%02?zQ%ce%d6%02%00%00xr%00%1f6%25%00 base.Base%1d.PY%19:%f4%8e%02%00%01J%00%07iMillisxp%00%0d%01%0c~r%00Iv%c5%02%19%ad%00.%09%e2%0cing.%09%ad>%ed%01%0dT%04%00%12%05%9a8%0ejava.lang.Enum.%1d%00`pt%00%11FIRE_IF_NON_EMPTY~r%00Ev%8b%00!|%0d{n#%02.j%00Hq%00~%00%0ct%00%16DISCARDING_%01y(D_PANESsr%00]vs%00j%fe%00%08Fn$IFDAtEarliestAssigneda%a4<stamp%bf%97%e5%aa%b5%f3%a2&%02%00%01]%22%01%95%10%06xr%00H%ca|%00%09s%01aHFn$DefaultsB%5c%e7%dc%ccABDI%13%00?%faW%00%1c%89%f1s%acX%13%e1%1d%01N%10psr%00@%caP%00%14GlobalI' s%f3%88D%c5%25>%14%03%01Q%82%e5%01Rr%01(NonMergingW%85q$FnB%1cF9%bd%06%b8%1a%09T%00;%ca%a3%00%11J%1c%8eii%ba6:%25%cc%01J%01%ef%8e%d5%05B%01%04%98f%a3%88%8d%b9%82V %02%00%04I%00%16firstIndexAfterSubtreeI%00%0c%8dg%05%1b%18L%00%0bsubT%89A%10st%00%10La1%89a%0cList2%97%04%00<%ceS%04%0d%5c%81R%08%00%00%01a%17%0csr%00%13%01fiK%10Array%01kDx%81%d2%1d%99%c7a%9d%03%00%01I%00%04size%89%22%04w%04%015%10xsr%00A%caa%01M%9e%0d%86%1c0%15Y%b6g%1f%8a%a0!g%08r%00:%caP%00%0dI%1c%87%8fm%a0%e2{%af&eT.C%010q%00~%00%1bxppq%00~%00%19"
+      },
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/Window.Into()"
+      },
+      "display_data" : [ {
+        "namespace" : "com.google.cloud.dataflow.sdk.transforms.windowing.Window$Bound",
+        "key" : "windowFn",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindows",
+        "shortValue" : "GlobalWindows",
+        "label" : "Windowing Function"
+      }, {
+        "namespace" : "com.google.cloud.dataflow.sdk.transforms.windowing.Window$Bound",
+        "key" : "accumulationMode",
+        "type" : "STRING",
+        "value" : "DISCARDING_FIRED_PANES",
+        "label" : "Accumulation Mode"
+      } ],
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s6"
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/Window.Into().out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.coders.StringUtf8Coder"
+          }, {
+            "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ]
+    }
+  }, {
+    "kind" : "ParallelDo",
+    "name" : "s14",
+    "properties" : {
+      "serialized_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "%82SNAPPY%00%00%00%00%01%00%00%00%01%00%00%0b|%c70%f0L%ac%ed%00%05sr%00+com.google.cloud.dataflow.sdk.util.DoFnInfo%c3|%e8%c2%d1&%cc%89%02%00%04L%00%04doFnt%00/Lcom/%09A%00/%05A%00/%11A</sdk/transforms/%01GD;L%00%0ainputCodert%00,Lv?%00%00c%01'%04s/%05. ;L%00%0esideI%01@%c8Viewst%00%14Ljava/lang/Iterable;L%00%11windowingStrategyt%006zk%00%14util/W>8%00%18;xpsr%009v&%018io.Write$Bound$%05%0ctBundles%bbS.%baL8%f1%25%02%00%03L%00%06this$0t%00.z%8c%00%08io/%05E%09Q%10;L%00%12w%01` Operation%01%fe%00t%82%d2%004values/PCollec%118%0c;L%00%06%05N%00r%92%88%00%0cSink%09%d2%14r;xr%00-v%0a%019%ef%00.!%ef%909%cf%e4%fb!%1e5%f2%02%00%02Z%00%13aggregatorsAreFinalL%00%0ba%19%16%08t%00%0f)%d0%25%8c(Map;xp%00sr%00%11!%e5I%8c%c0HashMap%05%07%da%c1%c3%16`%d1%03%00%02F%00%0aloadFactorI%00%09thresholdxp?@%00%00%01%02%14w%08%00%00%00%10%01%0a%10xsr%00,v%c3%006%cd%01%80`m%e9%89%88upk%02%00%02I%00%09numShardsL%00%04sinkt%00'%86%ca%01!B!;%003vx%00=;%04PTq64#2%8d%0a&%06%e5%0f%03%00%00xpx%01%c2%0csr%000vI%00$io.TextIO$%01%07%01~%1c%f4dm%84%05%a2f%c6E%85%00%05eT,q%00~%00%02L%00%06footA%0a%00%12)yeI%14StringA(%10heade%05,%10%14xr%00.%82x%00 FileBased%01v%1c,&%e3%19%c9P%8dh%05v(%12baseOutput%01%25%18namet%005z=%01%04opA%b5%08s/VA%c9%18Provide%81%07%98%09extensionq%00~%00%14L%00%12fileNamingTemplateq%00~%05%b5%00%25%82%b5%00%01%ac J%e2%ca%d3%ec%1c%0e%7f%02!h%0csr%00Hv6%00%0d%99%00.2%99%00%1c$Runtime2%15%00P%08%22%b4%86%22%91CP%02%00%05L%00%0cdefault%05%22%00t2t%01DObject;L%00%05klasst%00%11=%91%00C%01%13%a1; methodNam%09%df%08L%00%09%0d%8a%10Idt%00%10%1d2%04Lo%25%c1 %0cproperty%153%10xppvrn%df%00%10integ%89f$.WordCount1U%00$%15%12%00O)%9bA%92%0d%01%1cxpt%00%09get)%e5%0csr%00%0ee%b6AR%00.%05%8f0%8b%e4%90%cc%8f#%df%02%00%01J%00%05%85%9c%0cxr%00%10%19%254Number%86%ac%95%1d%0b%94%e0%8b%25%8a%0d[%10%00t%00%06oE<%00t%01%0c%08%0f-S%01%01%10-of-N%01%01%0csr%004v%b0%01%00c%c5G%04.SE%d9%0cUtf8%c5Q%1c%c0%12%9a%b7%e1%02%9b-%01k%82V%03%0dC%14Atomic%05?%1c%bc%cc%83sIN%19%ce%09?%00?%92%82%00HDeterministicStanda!c(der%a0 <%80%cb%ad%a4m%09N%002%92N%002A%00%1c%b5%d9Q%dd1%d7%da%15%01A%04ppA%c5a^~%dc%07:%1d%06(s$Singleton:%1a%00D%c7%0aa%d4%0c%a5%8d%dd%02%00%03Z%00%0ahasDI%cc%10[%00%13en!%1d%00d%0d%11M%dd%14%02[BL%00%0a%25%e7%25.a%aa%10%02xr%00Gv%da%00%a1%faF%95%00:%8c%00,Basep%f1%f5s%cd%10Q%ee%85^2%d4%04%14%03tagt%00~%99%08%05%9a s/TupleTa%81%eeF5%08%01%b4%00%04%12%01%08%96%90%01%00I%1a%82%08%05%f1%1c-%8a%ea?3s-%d8!%90%08r%006v%f7%00%00cA%03%00s%15A%08Lik%09E P%d9%ed/l%d2%ac%f8%02%a1%ad%18%0celemen%16<%09%01%9c%10%02L%00%0ci%0dty%e2%01%1a%04*s%96j%01%16%f0%08%04ed%25%b5%10$Full2%12%00%05%c9%1c%96%9d%a7%92%a6%bf%d2%17%05%84%00%0b%16Z%09%05%19%01i%01%83%09%13%00s%19%14%0cxr%00Cv%f0%00%25%e72k%00%00$2%0e%00%05L(%1d%05k%a0%10%9c%17%f8%02%00%01JK%02%01~%01%e7%96Z%01%1cSerializ%0e!%0a%05]%1c<pi%e0%f2%0d%82x%05]%0c%04typ%a5S%00%1b%05W%04(v%82%c1%00Fe%07%00$%e1n%12%b6%09%22%a7%09%1c%c3%da%d8%03%dd%fc%c7YF%a4%02%edx%01%c4%08%14L%00:h%07%00Fv<%01%04io6h%07%00$%e1Q%00B%e1v6~%00%1c-Zd%91%22n3%fc%05~%00%15%e1%80%a1%c7%10orary%012%e1%83%01%80%00%16%22%cc%08%000%811%00/f%cc%0b%08io/%019%05k%e15%18;L%00%16tem%19S%10Reten%e1%b3%08t%00_%baL%00^%c5%00%00$2%b4%00%15a%0eP%09z%f4%05%04io%e5%da%16%bc%0a5%93%1c%e1%bf%90%e0=%c8L%90a%96%a1$%00Evl%01*%95%09I%e6 ing.Globam)%00$EM%1ck%e5B3%00:%e8M%01V!T%00(%a2%93%06&%9c%0b%05I%1c%df%d7%a4%5c%91%0a%be%f4%11I%002%01N%0c@t%00%0a%19(%08t%00%08%91h%00s%82%90%0b%00v%0e:%09%04s.%91%e6%1c%e80%9e%81%ec%e1%ae%e5%12%90%0b%0c%09gen%0eP%0c%18edL%00%02id%01j%18%14xp%01t%00cv%14%01e%bc:%92%05%00sN%a3%05l.<init>:349#bb20b45fd4d95138%86!%01%05g%89%15*%c8%0d%b0%cd&%c7yV%d02%ba%02%00%0aZ%00%18allowedLatenessSpecifiedZ%00%0dmode%1d%10%00%15%16@%08%14TimeFn%1d%18%1c%10trigger%15%13%08L%00%0f:V%00Lt%00%18Lorg/joda/time/Du%16!%09T;L%00%0fclosingBehaviort%00Kz%fa%02YS%00/US%1ax%0e%04$C6M%00%0c;L%00%04%01%c8%08t%00GzU%00!-%0dE%04in%22%f5%0e%1c$Accumul%124%0e%08Mod%0e%1b%0f%00%0c.%09%01%08t%00AzY%00R%ae%00%16%e3%09)L%0c;L%00%07-D%86%92%0e%05%a7%14Execut%a1%89%00T)|%0c;L%00%08)%0b%10Fnt%00=%ce%92%00I(%0cFn;x%124%0a%1csr%00%16org.!%b3%00.!%b3%00.1%b3%1c%00%00%02?zQ%ce%d6aa%08r%00%1f6%25%00%a1$%00.%81%df%1d.%10Y%19:%f4%8e%12%b4%0a%1c%07iMillis%09c%01%01%0c~r%00Iv,%039?%9d@%09%ad>%ed%01%01Q%01%01%0c%12%00%00x2=%0b%0cEnum%01%19%01%01%01%1dXpt%00%11FIRE_IF_NON_EMPTY~r~%cb%04!|%0d{n#%02%01f%01%01%01j%81%138Tt%00%16DISCARDING_%01y(D_PANESsr%00]%e2%fe%00%08Fn$IFDAtEarliestAssignedAX0stamp%bf%97%e5%aa%b5%f3%a2&%e5%a3U%22%01%95%04Nxr%c4%0c%0csdk.Rz%01%09s%01a%08Fn$%1a%b0%0a sB%5c%e7%dc%ccABDI%13%00?%ca%d3%00.W%00%1c%89%f1s%acX%13%e1%1d%01N%c1a%00@%caP%00.a%06 s%f3%88D%c5%25>%14%03%01Q%82%e5%01R%f6%00(NonMergingW%12%df%12$FnB%1cF9%bd%06%b8%1a%09T%00;%ca%a3%00%11J%1c%8eii%ba6:%25%cc%01J%01%efz%95%07E%85B%01%04%98f%a3%88%8d%b9%82V %02%00%04I%00%16firstIndexAfterSubtreeI%00%0c%8dg%05%1b%14L%00%0bsub%8dA%08st%00%1a%fd%0e%01`%0c/Lis%0eJ%0f%99%97%00<%ceS%04%0d%5c%89R%00%01a%13%0csr%00%13%12%af%0e%01f%14.Array%01k,x%81%d2%1d%99%c7a%9d%03%00%01I%0e%17%12%04ze%89%22%04w%04%015%0er%12%00A%caa%01M%9e%0d%86%1c0%15Y%b6g%1f%8a%a0!g%08r%00:%caP%00%0dI%18%87%8fm%a0%e2{%afiT.C%01aW%0ccxpp%01%08%04a%00%05%07%048p%05%16%10'sr%00_vr%00$repackaged2$%12%18ommon.c%16%7f%14%0c.Imm%a9%f7!5%00$%1e%91%0b%10edFor%95%e0%14%02%00%01[%00%08%1a%e8%0c%14st%00%13[L!r%16%98%12%1a$%11%0cxpur%11%19%00.%12_%10%0d%19%1c%90%ceX%9f%10s)l!%25%c1%07%00%01%05%bf%00,%05%06%001%05%06%004%05%06%007%01%e4%00>%05%0b%00?%05%06%00A%01%11%00ubf%09%01%1e%00E%fe%18%09%9e%18%09%01m%00HA9%05%0a%00P%01%0a%01%01%01%17%00U%01%05%00X%05%18%00Z%05%06%00^%05%06%08b%00%00M%a0%01 %00f%01.Q{%01%11%00h%25%cc%00~)%d3%00t%05%13%10H%00%01%00%01%01%1c%00|%01%05%eeW%00%00%84"
+      },
+      "non_parallel_inputs" : {
+        "com.google.cloud.dataflow.sdk.util.PCollectionViews$PCollectionViewBase.<init>:349#bb20b45fd4d95138" : {
+          "@type" : "OutputReference",
+          "output_name" : "output",
+          "step_name" : "s12"
+        }
+      },
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/WriteBundles"
+      },
+      "user_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "com.google.cloud.dataflow.sdk.io.Write$Bound$WriteBundles"
+      },
+      "display_data" : [ {
+        "namespace" : "com.google.cloud.dataflow.sdk.io.Write$Bound$WriteBundles",
+        "key" : "sink",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSink",
+        "shortValue" : "TextSink",
+        "label" : "Write Sink"
+      }, {
+        "namespace" : "com.google.cloud.dataflow.sdk.io.TextIO$TextSink",
+        "key" : "fileNamePattern",
+        "type" : "STRING",
+        "value" : "RuntimeValueProvider{propertyName=output, default=null, value=null}-SSSSS-of-NNNNN",
+        "label" : "File Name Pattern"
+      }, {
+        "namespace" : "com.google.cloud.dataflow.sdk.transforms.ParDo$Bound",
+        "key" : "fn",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.io.Write$Bound$WriteBundles",
+        "shortValue" : "WriteBundles",
+        "label" : "Transform Function"
+      } ],
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s13"
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/WriteBundles.out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.coders.SerializableCoder",
+            "encoding_id" : {
+              "@type" : "http://schema.org/Text",
+              "value" : "com.google.cloud.dataflow.sdk.io.FileBasedSink$FileResult:4625589873304838299"
+            },
+            "type" : "com.google.cloud.dataflow.sdk.io.FileBasedSink$FileResult"
+          }, {
+            "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ]
+    }
+  }, {
+    "kind" : "ParallelDo",
+    "name" : "s15",
+    "properties" : {
+      "serialized_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "%82SNAPPY%00%00%00%00%01%00%00%00%01%00%00%06p%f0%18%f0L%ac%ed%00%05sr%00+com.google.cloud.dataflow.sdk.util.DoFnInfo%c3|%e8%c2%d1&%cc%89%02%00%04L%00%04doFnt%00/Lcom/%09A%00/%05A%00/%11A</sdk/transforms/%01GD;L%00%0ainputCodert%00,Lv?%00%00c%01'%04s/%05. ;L%00%0esideI%01@%c8Viewst%00%14Ljava/lang/Iterable;L%00%11windowingStrategyt%006zk%00%14util/W>8%00%18;xpsr%00kv&%01 runners.D-; PipelineR%05%18%14$Batch%01%b1hAsList$ToIsmRecordForGlobal%09y!#xu%ff%06%d8%25%d8L%98%02%00%01J%00%0dindexInBundlexr%00-v%8a%009o%00.%01L%909%cf%e4%fb!%1e5%f2%02%00%02Z%00%13aggregatorsAreFinalL%00%0ba%19%16%08t%00%0f)P%00u!%0c(Map;xp%00sr%00%11!eI%0c%c0HashMap%05%07%da%c1%c3%16`%d1%03%00%02F%00%0aloadFactorI%00%09thresholdxp?@%00%00%01%02%14w%08%00%00%00%10%01%0a%00x%01%05%01%01%0csr%006v%cb%00)%fb .Serializ!%daE%07P<pi%e0%f2%0d%82x%02%00%01L%00%04typet%00%11%09%b7E%07$Class;xr%000%92`%00%14Atomic%05Z8%bc%cc%83sIN%19%ce%02%00%00xr%00?%92?%00PDeterministicStandard%05N%1c%a0 <%80%cb%ad%a4m%09N%002%92N%002A%00%1c%b5%d9Q%dd1%d7%da%15%01A%10pvr%009vC%00@io.FileBasedSink$%01%0e4Result@1e{z%fa%a0%9b%253,%08filenamet%00%12=7%14StringI%ef%00_vj%00(repackaged..)%00Hommon.collect.Immut!%b5E%f31%c6%00eA%f2%04m%00%0d%01D%02%00%01[%00%08elementst%00%13[%1d%91(Object;xpur%11%19%00.!%e1%00.%0d%19%1c%90%ceX%9f%10s)l%25%1f%01Q%0csr%004.%90%00Z%ce%04ij%9d%1b%b0%cd&%c7yV%d02%ba%02%00%0aZ%00%18allowedLatenessSpecifiedZ%00%0dmode%1d%100%15outputTimeFn%1d%18%1c%10trigger%15%13%08L%00%0f:V%00`t%00%18Lorg/joda/time/Duratio%a1!H%0fclosingBehaviort%00Kz%bb%04y%f6%00/%95%f9%8d%cb%04$C6M%00%0c;L%00%04%01%c8%08t%00GzU%00%85%04B-%01%1c$Accumul%05%ad%08Mod%a1n%00%0c.%09%01%08t%00AzY%00R%ae%00%00O=L%0c;L%00%07-D%08t%006zN%00%05%a7%0cExecIn%00T)|%0c;L%00%08)%0b%10Fnt%00=zD%00R%92%00%09%fb%04Fn%a1%04(%01%00%01sr%00%16org.!%b3%00.!%b3%00.1%b3%1c%00%00%02?zQ%ce%d6A%89%08r%00%1f6%25%00%10base.a%94%1d.%10Y%19:%f4%8e%a5%df %07iMillisxE%c1%01%01%0c~r%00Iv%c5%02%19%ad%00.%09%e2%0cing.%09%ad>%ed%01%01Q%01%01%00%12%85%d1%00%0e%a5%c6eC%08Enuu%85%01%1d`pt%00%11FIRE_IF_NON_EMPTY~r%00Ev%8b%00!|%0d{%04in%f5kB#%02%01%83%01%01%01jHq%00~%00&t%00%16DISCARDING_%01y(D_PANESsr%00]vs%00j%fe%00%08Fn$IFDAtEarliestAssigneda%a40stamp%bf%97%e5%aa%b5%f3%a2&%a9%0a)@%04Fn%01%95%10 xr%00H%ca|%00%09s%01aHFn$DefaultsB%5c%e7%dc%ccABDI%13%00?%faW%00%1c%89%f1s%acX%13%e1%1d%01N%10psr%00@%caP%00.f%08 s%f3%88D%c5%25>%14%03%01Q%82%e5%01Rr%01(NonMergingW%122%09$FnB%1cF9%bd%06%b8%1a%09T%00;%ca%a3%00%11J%1c%8eii%ba6:%25%cc%01J%01%ef%8e%d5%05B%01%04Lf%a3%88%8d%b9%82V %02%00%04I%00%16firstI%0eK%098AfterSubtreeI%00%0c%8dg%05%1b%18L%00%0bsubT%89A%0cst%00%10%c9%8d%00u%0e%0c%09%0cList2%97%04%00<%ceS%04%0d%5c%81R%08%00%00%01a%13%0csr%00%13e%97%01f%14.Array%01kDx%81%d2%1d%99%c7a%9d%03%00%01I%00%04size%89%22%04w%04%015%10xsr%00A%caa%01M%9e%0d%86%1c0%15Y%b6g%1f%8a%a0!g%08r%00:%caP%00%0dI%18%87%8fm%a0%e2{%afiT.C%010q%00~%005xppq%00~%003"
+      },
+      "non_parallel_inputs" : { },
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/View.AsIterable/DataflowPipelineRunner.BatchViewAsIterable/ParDo(ToIsmRecordForGlobalWindow)"
+      },
+      "user_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "com.google.cloud.dataflow.sdk.runners.DataflowPipelineRunner$BatchViewAsList$ToIsmRecordForGlobalWindowDoFn"
+      },
+      "display_data" : [ {
+        "namespace" : "com.google.cloud.dataflow.sdk.transforms.ParDo$Bound",
+        "key" : "fn",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.runners.DataflowPipelineRunner$BatchViewAsList$ToIsmRecordForGlobalWindowDoFn",
+        "shortValue" : "ToIsmRecordForGlobalWindowDoFn",
+        "label" : "Transform Function"
+      } ],
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s14"
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "use_indexed_format" : {
+          "@type" : "http://schema.org/Boolean",
+          "value" : true
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/View.AsIterable/DataflowPipelineRunner.BatchViewAsIterable/ParDo(ToIsmRecordForGlobalWindow).out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.runners.worker.IsmFormat$IsmRecordCoder",
+            "component_encodings" : [ {
+              "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+            }, {
+              "@type" : "com.google.cloud.dataflow.sdk.coders.BigEndianLongCoder"
+            }, {
+              "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+              "component_encodings" : [ {
+                "@type" : "com.google.cloud.dataflow.sdk.coders.SerializableCoder",
+                "encoding_id" : {
+                  "@type" : "http://schema.org/Text",
+                  "value" : "com.google.cloud.dataflow.sdk.io.FileBasedSink$FileResult:4625589873304838299"
+                },
+                "type" : "com.google.cloud.dataflow.sdk.io.FileBasedSink$FileResult"
+              }, {
+                "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+              } ],
+              "is_wrapper" : {
+                "@type" : "http://schema.org/Boolean",
+                "value" : true
+              }
+            } ],
+            "num_shard_coders" : {
+              "@type" : "http://schema.org/Integer",
+              "value" : 1
+            },
+            "num_metadata_shard_coders" : {
+              "@type" : "http://schema.org/Integer",
+              "value" : 0
+            }
+          }, {
+            "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ]
+    }
+  }, {
+    "kind" : "CollectionToSingleton",
+    "name" : "s16",
+    "properties" : {
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/View.AsIterable/DataflowPipelineRunner.BatchViewAsIterable/View.CreatePCollectionView"
+      },
+      "display_data" : [ ],
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s15"
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/View.AsIterable/DataflowPipelineRunner.BatchViewAsIterable/View.CreatePCollectionView.out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.coders.IterableCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+            "component_encodings" : [ {
+              "@type" : "com.google.cloud.dataflow.sdk.runners.worker.IsmFormat$IsmRecordCoder",
+              "component_encodings" : [ {
+                "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+              }, {
+                "@type" : "com.google.cloud.dataflow.sdk.coders.BigEndianLongCoder"
+              }, {
+                "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+                "component_encodings" : [ {
+                  "@type" : "com.google.cloud.dataflow.sdk.coders.SerializableCoder",
+                  "encoding_id" : {
+                    "@type" : "http://schema.org/Text",
+                    "value" : "com.google.cloud.dataflow.sdk.io.FileBasedSink$FileResult:4625589873304838299"
+                  },
+                  "type" : "com.google.cloud.dataflow.sdk.io.FileBasedSink$FileResult"
+                }, {
+                  "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+                } ],
+                "is_wrapper" : {
+                  "@type" : "http://schema.org/Boolean",
+                  "value" : true
+                }
+              } ],
+              "num_shard_coders" : {
+                "@type" : "http://schema.org/Integer",
+                "value" : 1
+              },
+              "num_metadata_shard_coders" : {
+                "@type" : "http://schema.org/Integer",
+                "value" : 0
+              }
+            }, {
+              "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+            } ],
+            "is_wrapper" : {
+              "@type" : "http://schema.org/Boolean",
+              "value" : true
+            }
+          } ],
+          "is_stream_like" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ]
+    }
+  }, {
+    "kind" : "ParallelDo",
+    "name" : "s17",
+    "properties" : {
+      "serialized_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "%82SNAPPY%00%00%00%00%01%00%00%00%01%00%00%0bN%8f0%f0L%ac%ed%00%05sr%00+com.google.cloud.dataflow.sdk.util.DoFnInfo%c3|%e8%c2%d1&%cc%89%02%00%04L%00%04doFnt%00/Lcom/%09A%00/%05A%00/%11A</sdk/transforms/%01GD;L%00%0ainputCodert%00,Lv?%00%00c%01'%04s/%05. ;L%00%0esideI%01@%c8Viewst%00%14Ljava/lang/Iterable;L%00%11windowingStrategyt%006zk%00%14util/W>8%00%18;xpsr%00.v&%01%98io.Write$Bound$2%a6g%f4%dbmc%e6%92%02%00%02L%00%06this$0t%00.z%81%00%08io/%1dF8;L%00%0fval$results%01%f0%00t%82%c4%00Dvalues/PCollection%018%10;xr%00-v%c2%009%a7%00.!%a7%909%cf%e4%fb!%1e5%f2%02%00%02Z%00%13aggregatorsAreFinalL%00%0ba%19%16%08t%00%0f)%88%25D(Map;xp%00sr%00%11!%9dID%c0HashMap%05%07%da%c1%c3%16`%d1%03%00%02F%00%0aloadFactorI%00%09thresholdxp?@%00%00%01%02%14w%08%00%00%00%10%01%0a%10xsr%00,v%c3%006%85%01%80`m%e9%89%88upk%02%00%02I%00%09numShardsL%00%04sinkt%00'%86%8d%01%0cSink!;%003vx%00=;%04PTQ%ee4#2%8d%0a&%06%e5%0f%03%00%00xpx%01%c2%0csr%000vI%00$io.TextIO$%01%07%01~4%f4dm%84%05%a2f%c6%02%00%03L%00%05e%0c%08q%00~EU%0cfootaA%00%12)ye%018String;L%00%06heade%05,%04%13x%8e%be%02 FileBased%01v%1c,&%e3%19%c9P%8dh%05v(%12baseOutput%01%25%18namet%005z=%01%04opA{%08s/VA%8f%18Providea%bf%90%09extensionq%00~%00%13L%00%12fileNamingTemplateq%01%1a%0cxr%00%25%82-%01%01%ac J%e2%ca%d3%ec%1c%0e%7f%02!h%0csr%00Hv6%00%0d%99%00.2%99%00%1c$Runtime2%15%00P%08%22%b4%86%22%91CP%02%00%05L%00%0cdefault%05%22%00t2t%01DObject;L%00%05klasst%00%11=%91%00C%01%13%81%f3 methodNam%09%df%08L%00%09%0d%8a%10Idt%00%10%1d2%04Lo%25%c1 %0cproperty%153%10xppvrn%df%00%18integra!y$.WordCount1U%00$%15%12%00O)%9bA%92%0d%01%1cxpt%00%09get)%e5%0csr%00%0ee%b6AR%00.%05%8f0%8b%e4%90%cc%8f#%df%02%00%01J%00%05%85b%0cxr%00%10%19%254Number%86%ac%95%1d%0b%94%e0%8b%25%8a%0d[%10%00t%00%06oE<%00t%01%0c%08%0f-S%01%01%10-of-N%01%01%0csr%004v%b0%01%00c%a5%ff%04.SE%d9%0cUtf8%c5%09%1c%c0%12%9a%b7%e1%02%9b-%01k%82V%03%0dC%14Atomic%05?%1c%bc%cc%83sIN%19%ce%09?%00?%92%82%00HDeterministicStanda!c(der%a0 <%80%cb%ad%a4m%09N%002%92N%002A%00%1c%b5%d9Q%dd1%d7%da%15%01A%04ppA%c5%00KvE%00%a1e%00.:%e3%05%08s$I%cd%fe:%19%00%1cQ%bf%ebt%fcc 7%01^%08r%00G%ceZ%00:R%00,Basep%f1%f5s%cd%10Q%ee%85#2%99%04%14%03tagt%00~%16%08EF s/TupleTa%81%b3F%b2%07%81#%00%04%e5~%96U%011%01%25%e4%1c-%8a%ea?3s-%d8%09%f7%006v%f7%00%00c!%c8%00s%15A%08Lik%09E%1cP%d9%ed/l%d2%ac%f8%e5%c7%18%0celemen%16%b9%08%01%9c%10%02L%00%0ci-uy%a7%01%1a%04)s%96j%01%16m%08%04ed%85W%10$Full2%12%00%05%c9%1c%96%9d%a7%92%a6%bf%d2%17%05%84%00%0b%16%d7%08%05%19%01i%01%83%09%13%00s%19%14%0cxr%00Cv%f0%00EA2k%00%00$2%0e%00%05L4%1d%05k%a0%10%9c%17%f8%02%00%01L%00%0a%25%b1%05%18%05x%15%e7%96Z%01%1cSerializ%0e%9e%09%05E%1c<pi%e0%f2%0d%82x%05]%0c%04typ%a5%18%00%1a%05W%10'vr%009v%c1%00%04io6%b2%06%00$%c1%9b%00R%12)%09%1c@1e{z%fa%a0%9b%05Z%00%08%c1_%c1%b3%01%b5%00%13EL%00EvZ%00%fd%cd)Y ing.Globa-%9c%00$%05%c0%1ck%e5B3%00:%e8MA_%01%5c%00'%a2%cb%04&%9a%09%05I%1c%df%d7%a4%5c%91%0a%be%f4%11I%000%01N%0c:t%00%0a%19(%08t%00%08Q%db%00s%82%c8%09%00v%e1r%04s.qY%1c%e80%9e%81%ec%e1%ae%e5%12%c8%098%09generatedL%00%02id%01j%18%13xp%01t%00cv%14%01E/:%05%04%00sN%16%04h.<init>:349#3d93cb799b3970b%01%bbz%ec%05%05gI%88*%b8%0b%b0%cd&%c7yV%d02%ba%02%00%0aZ%00%18allowedLatenessSpecifiedZ%00%0dmode%1d%10%00%15%c9x%14TimeFn%1d%18%1c%10trigger%15%13%08L%00%0f:V%00Lt%00%18Lorg/joda/time/Du%e9Y%0e%94%0bDclosingBehaviort%00Kz%0d%09YS%00/US%1ah%0c%04$C6M%00%0c;L%00%04%01%c8%08t%00GzU%00!-%0dE%04in%22%e5%0c%1c$Accumul%12%06%08%08Mod%0e%0b%0d%00%0c.%09%01%08t%00AzY%00R%ae%00%16%1b%08)L%0c;L%00%07-D%86%90%0c%05%a7%14Executa%fc%00T)|%0c;L%00%08)%0b%10Fnt%00=%ce%92%00I(@Fn;xp%00%01%00%01sr%00%16org.!%b3%00.!%b3%00.1%b3%1c%00%00%02?zQ%ce%d6aa%08r%00%1f6%25%00%0e%dc%0a%10.Base%1d.%10Y%19:%f4%8e%12%ec%08 %07iMillisx%22%cf%08%0c~r%00Iv,%039?%9d@%09%ad>%ed%01%1e$%09%0c%12%00%00x2u%09%0cEnum.%1d%00Xpt%00%11FIRE_IF_NON_EMPTY~r~%cb%04!|%0d{n#%02.j%00%81%138Nt%00%16DISCARDING_%01y(D_PANESsr%00]%e2%fe%00%08Fn$IFDAtEarliestAssignedAX0stamp%bf%97%e5%aa%b5%f3%a2&%a9%bcQ%22%01%95%04Hxr%fc%0a%0csdk.Rz%01%09s%01a%0cFn$D%16%c5%0b sB%5c%e7%dc%ccABDI%13%00?%ca%d3%00.W%00%1c%89%f1s%acX%13%e1%1d%01N%0e%bd%09%00@%caP%00.a%06 s%f3%88D%c5%25>%14%03%01Q%82%e5%01R%f6%00(NonMergingW%12%cf%10$FnB%1cF9%bd%06%b8%1a%09T%00;%ca%a3%00%11J%1c%8eii%ba6:%25%cc%01J%01%ef%8e%d5%05B%01%04%98f%a3%88%8d%b9%82V %02%00%04I%00%16firstIndexAfterSubtreeI%00%0c%8dg%05%1b%14L%00%0bsub%8dA%08st%00%1a5%0dA%e5%0c/Lis%0e%82%0d%99%97%00<%ceS%04%0d%5c%81R%08%00%00%01a%17%0csr%00%13%12%e7%0c%01f%14.Array%01k,x%81%d2%1d%99%c7a%9d%03%00%01I%0eO%10%04ze%89%22%04w%04%015%0e%aa%10%00A%caa%01M%9e%0d%86%1c0%15Y%b6g%1f%8a%a0!g%08r%00:%caP%00%0dI%18%87%8fm%a0%e2{%afiT.C%01aW%0c]xpp%01%08%00[%05%0e%045v%82:%0aF%a3%10%00$%0e%ac%10%12%b7%12%04Op%0e]%08(ion%c3%da%d8%03%dd%fc%c7YF%1d%0c%1a%b6%10%01s%00%13B%a6%10%00Fv%e5%00R%f4%09%a1%bc%00d6~%00%1c-Zd%91%22n3%fc%05~%00%15%a1%e2%0e%05%0f%10orary%0e&%0a%1e%0e%0a%00%15%22%0a%12%000z-%02%08io/%019%05k%0es%10%18;L%00%16tem%19S%10Reten%01%f9%08t%00_%baL%00%12%b9%0a%05Z6%c5%00%00$2%b4%00%15a%0e%8e%12zq%03%04io%12%18%11%00$6P%00%1c%e1%bf%90%e0=%c8L%90AOa%b6%00_vl%01$repackaged2%f9%14%18ommon.c%16%5c%14%0c.Imm%e9%d6a%14%00$%1e%e3%0b%10edFor%d5%bf%14%02%00%01[%00%08%1a:%0d%14st%00%13[LaQ%16%af%12%1a;%11%0cxpur%11%19%00.%12v%10%0d%19%1c%90%ceX%9f%10s)l%05%b5a%94E%a6%00+%05%06%00/%05%06%002%05%06%005AP%008%05%0b%009%05%06%00;%01%11%00ubE%0b%01%1e%00?%fe%f7%0a%9e%f7%0a%01m%00B%12%a3%08%01%0a%00J%81%22%01%01%01%0d%00O%01%05%00R%05%18%00T%05%06%00X%05%06%00%5c%01%eb%01$%05%0e%00`%01%0a%91Z%011%00be%b2%00~%05%0c%00B%01%1d%01%15%00|%01%05%eeP%00%00%84"
+      },
+      "non_parallel_inputs" : {
+        "com.google.cloud.dataflow.sdk.util.PCollectionViews$PCollectionViewBase.<init>:349#3d93cb799b3970be" : {
+          "@type" : "OutputReference",
+          "output_name" : "output",
+          "step_name" : "s16"
+        }
+      },
+      "user_name" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/Finalize"
+      },
+      "user_fn" : {
+        "@type" : "http://schema.org/Text",
+        "value" : "com.google.cloud.dataflow.sdk.io.Write$Bound$2"
+      },
+      "display_data" : [ {
+        "namespace" : "com.google.cloud.dataflow.sdk.transforms.ParDo$Bound",
+        "key" : "fn",
+        "type" : "JAVA_CLASS",
+        "value" : "com.google.cloud.dataflow.sdk.io.Write$Bound$2",
+        "shortValue" : "",
+        "label" : "Transform Function"
+      } ],
+      "parallel_input" : {
+        "@type" : "OutputReference",
+        "output_name" : "output",
+        "step_name" : "s8"
+      },
+      "output_info" : [ {
+        "output_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "output"
+        },
+        "user_name" : {
+          "@type" : "http://schema.org/Text",
+          "value" : "WriteCounts/Write/DataflowPipelineRunner.BatchWrite/Finalize.out"
+        },
+        "encoding" : {
+          "@type" : "com.google.cloud.dataflow.sdk.util.WindowedValue$FullWindowedValueCoder",
+          "component_encodings" : [ {
+            "@type" : "com.google.cloud.dataflow.sdk.coders.VarIntCoder"
+          }, {
+            "@type" : "com.google.cloud.dataflow.sdk.transforms.windowing.GlobalWindow$Coder"
+          } ],
+          "is_wrapper" : {
+            "@type" : "http://schema.org/Boolean",
+            "value" : true
+          }
+        }
+      } ]
+    }
+  } ],
+  "type" : "JOB_TYPE_BATCH"
+}
