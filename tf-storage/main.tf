@@ -1,7 +1,7 @@
 
 terraform {
   backend "consul" {
-  address = "35.231.85.164"
+  address = ""
     path    = "remote-state-file"
   }
 }
